@@ -13,9 +13,21 @@ export default function Footer(){
                     <li><a href="#">#</a></li>
                 </ul>
             </div>
-            <div className="redes-div"></div>
-            <div className="feedback-div"></div>
-            <div className="direitos-div"></div>
+            <div className="redes-div">
+                <a href="#"><img src="" alt="logo do instagram" /></a>
+                <a href="#"><img src="" alt="logo do X" /></a>
+                <a href="#"><img src="" alt="logo do facebook" /></a>
+            </div>
+            <div className="feedback-div">
+                <form>
+                    <input type="text" name="nome" id="nome-form" placeholder="Seu Nome" />
+                    <input type="email" name="email" id="email-form" placeholder="Seu E-mail"/>
+                    <input type="text" name="comment" id="comentario-form" placeholder="Seu Comentário" />
+                </form>
+            </div>
+            <div className="direitos-div">
+                <p>@2024 - Grupo TechSphere - Todos os direitos reservados</p>
+            </div>
         </DesignFooter>
     )
 }

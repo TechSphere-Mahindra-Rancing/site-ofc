@@ -13,8 +13,7 @@ const EstiloGlobal = createGlobalStyle `
 }
     /* Definindo o fundo da página */
   body {
-    background-color: begi;
-    font-family: "Prompt", system-ui;
+  
   }
 
     
