@@ -1,4 +1,7 @@
 import { DesignFooter } from "../styled";
+import IconFacebook from '../../public/icon-facebook.png'
+import IconX from '../../public/icon-twitter.png'
+import IconInstagram from '../../public/icon-instagram.png'
 
 export default function Footer(){
     return(
@@ -14,9 +17,9 @@ export default function Footer(){
                 </ul>
             </div>
             <div className="redes-div">
-                <a href="#"><img src="" alt="logo do instagram" /></a>
-                <a href="#"><img src="" alt="logo do X" /></a>
-                <a href="#"><img src="" alt="logo do facebook" /></a>
+                <a href="#"><img src={IconInstagram} alt="logo do instagram" /></a>
+                <a href="#"><img src={IconX} alt="logo do X" /></a>
+                <a href="#"><img src={IconFacebook} alt="logo do facebook" /></a>
             </div>
             <div className="feedback-div">
                 <form>
@@ -26,6 +29,7 @@ export default function Footer(){
                 </form>
             </div>
             <div className="direitos-div">
+                <hr />
                 <p>@2024 - Grupo TechSphere - Todos os direitos reservados</p>
             </div>
         </DesignFooter>

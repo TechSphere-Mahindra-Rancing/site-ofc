@@ -6,7 +6,7 @@ export const DesignHeader = styled.header`
 
 export const DesignFooter = styled.footer`
     margin: 0;
-    background-color: yellowgreen;
+    background-color: #30355e;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr 1.4fr 0.3fr;
@@ -15,7 +15,6 @@ export const DesignFooter = styled.footer`
     
 
     #sobre { grid-area: 1 / 1 / 2 / 2;
-    background-color: yellow;
     text-align: center;
     padding-top: 2%;
     color: white;
@@ -23,7 +22,6 @@ export const DesignFooter = styled.footer`
     }
 
     #redes{ grid-area: 1 / 2 / 2 / 3;
-    background-color: blue;
     text-align: center;
     padding-top: 2%;
     color: white;
@@ -31,7 +29,6 @@ export const DesignFooter = styled.footer`
     }
 
     #feedback{ grid-area: 1 / 3 / 2 / 4;
-    background-color: bisque;
     text-align: center;
     padding-top: 2%;
     color: white;
@@ -40,7 +37,6 @@ export const DesignFooter = styled.footer`
 
     .sobre-div { 
     grid-area: 2 / 1 / 3 / 2; 
-    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,6 +44,7 @@ export const DesignFooter = styled.footer`
 
     .sobre-div ul li{
         list-style-type: none;
+        margin: 15px 0;
     }
 
     .sobre-div a{
@@ -57,14 +54,53 @@ export const DesignFooter = styled.footer`
     }
 
     .redes-div { grid-area: 2 / 2 / 3 / 3; 
-    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    }
+
+    img{
+        width: 50px;
     }
 
     .feedback-div { grid-area: 2 / 3 / 3 / 4;
-    background-color: blueviolet;
+    
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 2% 20%;
+    }
+
+    #comentario-form{
+        height: 70px;
+        border: none;
+        border-radius: 6px;
+    }
+
+    #nome-form{
+        height: 30px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    #email-form{
+        height: 30px;
+        border: none;
+        border-radius: 4px;
     }
 
     .direitos-div { grid-area: 3 / 1 / 4 / 4;
-    background-color: aquamarine;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
     }
+
+
 `
