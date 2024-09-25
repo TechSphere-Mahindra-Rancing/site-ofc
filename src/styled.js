@@ -2,14 +2,74 @@ import styled from "styled-components";
 
 export const DesignHeader = styled.header`
     margin: 0;
+    background-color: #ffa899;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    grid-template-rows: 0.2fr;
+    align-items: center;
+    text-align: center;
+
+    .img-logo { 
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    img{
+        width: 200px;
+    }
+
+    nav { 
+        grid-area: 1 / 2 / 2 / 3; 
+        margin-left: 7em;
+    }
+
+    nav ul{
+        display: flex;
+        text-align: center;
+    }
+    
+    nav ul li{
+        list-style-type: none;
+        margin: 0 4%;
+
+    }
+
+    nav a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #a52a2a;
+        transition: 0.4s;
+    }
+
+    nav a:hover{
+        color: #d26962;
+    }
+
+    .perfil { 
+        grid-area: 1 / 3 / 2 / 4; 
+
+    }
+
+    .perfil a{
+        background-color: #bb4a46;
+        padding: 23px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white;
+        transition:0.4s;
+    }
+
+    .perfil a:hover{
+        cursor: pointer;
+        background-color: #d26962;
+    }
 `
 
 export const DesignFooter = styled.footer`
     margin: 0;
-    background-color: #30355e;
+    background-color: #a52a2a;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.5fr 1.4fr 0.3fr;
+    grid-template-rows: 0.5fr 1.2fr 0.3fr;
     width: 100%;
     height: 40vh;
     
