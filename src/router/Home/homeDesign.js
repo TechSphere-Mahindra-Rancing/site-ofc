@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const DesignHome = styled.main`
-    
+    h1{
+        color: #b32b39;
+    }
 `
 
 export const DesingSect1Home = styled.section`
@@ -45,6 +47,32 @@ export const DesingSect1Home = styled.section`
         border: 1px solid #981717
     }
 
+    @media (max-width: 768px){
+
+
+        .container-inicial img{
+        height: 80vh;
+        width: 100%;
+        object-fit: COVER;
+    }
+
+    .container-inicial h1{
+
+        font-size: 22px;
+  
+        letter-spacing: 7px;
+      
+    }
+
+    .container-inicial a{   
+
+        font-size: 15px;
+        
+    }
+
+    }
+
+
     
 `
 
@@ -85,11 +113,40 @@ export const DesingSect2Home = styled.section`
         font-size: 14px;
         text-align: justify;
     }
+
+    @media (max-width: 768px){
+     
+        height: 60vh;
+
+    img{
+        width: 360px;
+    }
+    
+    img{
+        width: 250px;
+    }
+
+
+    .container-sect2-paragrafo{
+  
+        margin: 0 5%;
+        gap: 10px;
+    }
+
+    .container-sect2-paragrafo h1{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .container-sect2-paragrafo p {
+        font-size: 12px;
+    }
+    }
 `
 
 export const DesingSect3Home = styled.section`
 
-.container-sect3{
+    .container-sect3{
         position: relative;
         width: 100%;
         display: flex;
@@ -125,6 +182,32 @@ export const DesingSect3Home = styled.section`
         font-size: 16px;
         margin-left: 3%;
         margin-right: 5%;
+    }
+
+    @media (max-width: 768px){
+
+    .container-sect3 img{
+    
+        height: 80vh;
+    }
+
+    .paragrafos-container{
+        margin-top: 45%;
+        
+        
+    }
+
+    .paragrafos-container h1{
+        font-size: 22px;
+        letter-spacing: 3px;
+        margin-left: 6%;
+    }
+
+    .paragrafos-container p{
+        font-size: 14px;
+        margin-left: 3%;
+        margin-right: 5%;
+    } 
     }
     
 `
@@ -164,6 +247,38 @@ display: flex;
         text-align: justify;
     }
 
+    @media (max-width: 768px){
+    
+        height: 60vh;
+
+    img{
+        width: 250px;
+    }
+
+    .container-sect4{
+
+        margin: 0 10%;
+        
+    }
+
+    .container-sect4-paragrafo{
+
+        margin: 0 5%;
+        gap: 10px;
+    }
+
+    .container-sect4-paragrafo h1{
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+
+    .container-sect4-paragrafo p {
+        font-size: 12px;
+        text-align: justify;
+    }
+
+
+    }
 `
 
 export const DesingSect5Home = styled.section`
