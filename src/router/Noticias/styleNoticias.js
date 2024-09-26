@@ -39,23 +39,33 @@ export const DesingNoticia1 = styled.main`
         width: 400px;
     }
 
+    background-color: #f0f0f0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1.5fr 0.7fr 1.5fr 1.5fr 0.7fr;
+    grid-template-rows: 0.5fr 1.7fr 0.6fr 1.7fr 1.7fr 0.7fr;
+    gap: 60px;
 
     #titulo-principal{
         grid-area: 1 / 1 / 2 / 2;
         font-size: 50px;
-        font-weight: 300;
+        font-weight: 500;
         letter-spacing: 3px;
+        text-align: center;
+        margin-top: 2%;
+        color: #b32b39;
+        border-bottom: 1px solid #b32b39;
+        padding-bottom: 2%;
     }
 
     p{
         font-size: 16px;
     }
 
+    h1{
+        color: #b32b39;
+    }
+
     .noticia1{
-        background-color: aqua;
         grid-area: 2 / 1 / 3 / 2;
         display: flex;
         align-items: center;
@@ -73,23 +83,70 @@ export const DesingNoticia1 = styled.main`
     }
 
     .noticia2{
-        background-color: beige;
         grid-area: 3 / 1 / 4 / 2;
+        padding: 0 20%;
+    }
+
+    .paragrafo2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+
+    .paragrafo2 p{
+        text-align: justify;
     }
 
     .noticia3{
-        background-color: bisque;
         grid-area: 4 / 1 / 5 / 2;
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+    }
+
+    .paragrafo3{
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        gap: 20px;
+    }
+
+    .paragrafo3 p{
+        text-align: justify;
     }
 
     .noticia4{
-        background-color: brown;
         grid-area: 5 / 1 / 6 / 2; 
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
     }
 
-    .noticia5{
-        background-color:yellow;
-        grid-area: 6 / 1 / 7 / 2;
+    .paragrafo4{
+        padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
+    .paragrafo4 p{
+        text-align: justify;
+    }
+
+    
+
+    .noticia5{
+        grid-area: 6 / 1 / 7 / 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15% 50px 15%;
+        gap: 15px;
+    }
+
+    .noticia5 p{
+        text-align: justify;
     }
 `
