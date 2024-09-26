@@ -44,6 +44,8 @@ export const DesingSect1Home = styled.section`
 
         border: 1px solid #981717
     }
+
+    
 `
 
 export const DesingSect2Home = styled.section`

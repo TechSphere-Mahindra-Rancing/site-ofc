@@ -68,7 +68,7 @@ export const DesignHeader = styled.header`
 
 
         .img-logo { 
-            
+            padding-left: 10%;
         }
 
         img{
