@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const DesignHeader = styled.header`
     margin: 0;
-    background-color: #ffa899;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #a52a2a;
     display: grid;
     grid-template-columns: 0.5fr 1.5fr 0.5fr;
     grid-template-rows: 0.2fr;
@@ -10,7 +11,7 @@ export const DesignHeader = styled.header`
     text-align: center;
 
     .img-logo { 
-        grid-area: 1 / 1 / 2 / 2;
+        
     }
 
     img{
@@ -66,7 +67,7 @@ export const DesignHeader = styled.header`
 
 export const DesignFooter = styled.footer`
     margin: 0;
-    background-color: #a52a2a;
+    background-color: #b32b39;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr 1.2fr 0.3fr;
