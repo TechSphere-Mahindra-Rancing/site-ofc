@@ -63,6 +63,44 @@ export const DesignHeader = styled.header`
         cursor: pointer;
         background-color: #d26962;
     }
+
+    @media (max-width: 768px){
+
+
+        .img-logo { 
+            
+        }
+
+        img{
+            width: 150px;
+        }
+
+        nav { 
+
+            margin-left: 10%;
+        }
+
+
+
+        
+
+        nav a{
+ 
+            font-size: 14px;
+
+        }
+
+
+        .perfil a{
+
+            padding: 15px 20px;
+
+        }
+
+        
+        }
+
+
 `
 
 export const DesignFooter = styled.footer`
@@ -163,5 +201,64 @@ export const DesignFooter = styled.footer`
     font-size: 10px;
     }
 
+    @media (max-width: 768px){
+
+        #sobre {
+            font-size: 20px;
+        }
+
+        #redes{ 
+            font-size: 20px;
+
+        }
+
+        #feedback{ 
+            font-size: 20px;
+        }
+
+       
+
+        .sobre-div ul li{
+            list-style-type: none;
+            margin: 15px 0;
+        }
+
+        .sobre-div a{
+    
+            font-size: 15px;
+        
+        }
+
+   
+
+        img{
+            width: 30px;
+        }
+
+
+        form{
+            gap: 10px;
+            margin: 2% 20%;
+        }
+
+        #comentario-form{
+            height: 50px;
+        }
+
+        #nome-form{
+            height: 20px;
+           
+        }
+
+        #email-form{
+            height: 20px;
+            
+        }
+
+        .direitos-div { 
+        
+            font-size: 10px;
+        }
+    }
 
 `
