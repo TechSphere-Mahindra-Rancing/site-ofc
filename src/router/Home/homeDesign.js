@@ -248,34 +248,34 @@ display: flex;
     }
 
     @media (max-width: 768px){
-    
-        height: 60vh;
-
-    img{
-        width: 250px;
-    }
-
-    .container-sect4{
-
-        margin: 0 10%;
         
-    }
+            height: 60vh;
 
-    .container-sect4-paragrafo{
+        img{
+            width: 250px;
+        }
 
-        margin: 0 5%;
-        gap: 10px;
-    }
+        .container-sect4{
 
-    .container-sect4-paragrafo h1{
-        font-size: 22px;
-        letter-spacing: 3px;
-    }
+            margin: 0 10%;
+            
+        }
 
-    .container-sect4-paragrafo p {
-        font-size: 12px;
-        text-align: justify;
-    }
+        .container-sect4-paragrafo{
+
+            margin: 0 5%;
+            gap: 10px;
+        }
+
+        .container-sect4-paragrafo h1{
+            font-size: 22px;
+            letter-spacing: 3px;
+        }
+
+        .container-sect4-paragrafo p {
+            font-size: 12px;
+            text-align: justify;
+        }
 
 
     }
@@ -343,6 +343,60 @@ display: flex;
         padding: 10px 20px;
         border-radius: 8px;
         margin-right: 75%;
+    }
+
+    @media (max-width: 768px){
+
+        height: 70vh;
+        gap: 10%;
+
+        .titulo-subtitulo{
+
+            gap: 5px;
+        }
+
+        .titulo-subtitulo h1{
+            color: #E61631;
+            letter-spacing: 4px;
+            font-size: 20px;
+        }
+
+        .titulo-subtitulo h2{
+
+            font-size: 18px;
+        }
+
+        img{
+            width: 250px;
+            border-radius: 16px;
+        }
+
+        .container-principal{
+
+            margin: 0 10%;
+            gap: 10%;
+        }
+
+        .paragrafo{
+
+            gap: 10px;
+        }
+
+        .paragrafo p{
+            font-size: 12px;
+            text-align: justify;
+        }
+
+        .paragrafo h1{
+            font-size: 22px;
+        }
+
+        .paragrafo a{
+            font-size: 14px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-right: 62%;
+        }
     }
 
 `
