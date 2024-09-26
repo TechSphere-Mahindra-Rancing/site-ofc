@@ -79,6 +79,9 @@ export const DesingNoticia1 = styled.main`
         flex-direction: column;
         gap: 15px;
         padding: 0 10%;
+        
+    }
+    .paragrafo1 p {
         text-align: justify;
     }
 
@@ -148,5 +151,40 @@ export const DesingNoticia1 = styled.main`
 
     .noticia5 p{
         text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+        img{
+        width: 300px;
+    }
+        gap: 10px;
+
+        #titulo-principal{
+            font-size: 30px;
+            margin-top: 3%;
+            color: #b32b39;
+            padding-bottom: 2%;
+        }
+
+        p{
+            font-size: 12px;
+        }
+
+        h1{
+            color: #b32b39;
+            font-size: 20px;
+        }
+
+        .noticia1{
+            padding-right: 10%;
+            
+        }
+
+        .paragrafo1{
+            gap: 15px;
+            padding: 0 5% 0 15%;
+            
+        }
+ 
     }
 `
