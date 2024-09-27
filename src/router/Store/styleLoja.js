@@ -22,6 +22,18 @@ export const DesignLojaMain = styled.main`
         border-bottom: 1px solid #a52a2a;
         color: #a52a2a;
     }
+
+    @media (max-width: 768px){
+       .categorias{
+        font-size: 30px;
+       }
+
+       #titulo{
+        font-size: 20px;
+       }
+
+    }
+   
 `
 
 export const DesignSect1Loja = styled.section`
@@ -103,6 +115,40 @@ export const DesignSect1Loja = styled.section`
         transform: scale(1.05);
         cursor: pointer;
     }
+    @media (max-width: 768px){
+        img{
+            width: 180px;
+            height: 260px;
+        }
+
+        h1{
+            font-size: 20px;
+        }
+
+        height: 60vh;
+
+        .produto1{
+                margin: 0 5% 0 5%;
+                padding: 20px 0;
+                border-radius: 8px;
+                
+            }
+        .produto2{
+            margin: 0 5% 0 5%;
+            padding: 20px 0;
+            border-radius: 8px;
+                
+            }
+        .produto3{
+            margin: 0 5% 0 5%;
+            padding: 20px 0;
+            border-radius: 8px;
+                
+            }
+
+    }
+
+    
 
 `
 
@@ -182,6 +228,39 @@ export const DesignSect2Loja = styled.section`
     .produto6:hover{
         transform: scale(1.05);
         cursor: pointer;
+    }
+
+    @media (max-width: 768px){
+        img{
+            width: 180px;
+            height: 260px;
+        }
+
+        h1{
+            font-size: 20px;
+        }
+
+        height: 60vh;
+
+        .produto4{
+                margin: 0 5% 0 5%;
+                padding: 20px 0;
+                border-radius: 8px;
+                
+            }
+        .produto5{
+            margin: 0 5% 0 5%;
+            padding: 20px 0;
+            border-radius: 8px;
+                
+            }
+        .produto6{
+            margin: 0 5% 0 5%;
+            padding: 20px 0;
+            border-radius: 8px;
+                
+            }
+
     }
 
 `
@@ -266,6 +345,38 @@ display: grid;
         cursor: pointer;
     }
 
+    @media (max-width: 768px){
+        img{
+            width: 180px;
+            height: 260px;
+        }
+
+        h1{
+            font-size: 20px;
+        }
+
+        height: 60vh;
+
+        .produto1{
+                margin: 0 5% 0 5%;
+                padding: 20px 0;
+                border-radius: 8px;
+                
+            }
+        .produto2{
+            margin: 0 5% 0 5%;
+            padding: 20px 0;
+            border-radius: 8px;
+                
+            }
+        .produto3{
+            margin: 0 5% 0 5%;
+            padding: 20px 0;
+            border-radius: 8px;
+                
+            }
+
+    }
 
 `
 
@@ -343,6 +454,39 @@ export const DesignSect4Loja = styled.section`
     .produto6:hover{
         transform: scale(1.05);
         cursor: pointer;
+    }
+
+    @media (max-width: 768px){
+        img{
+            width: 180px;
+            height: 260px;
+        }
+
+        h1{
+            font-size: 20px;
+        }
+
+        height: 60vh;
+
+        .produto4{
+                margin: 0 5% 0 5%;
+                padding: 20px 0;
+                border-radius: 8px;
+                
+            }
+        .produto5{
+            margin: 0 5% 0 5%;
+            padding: 20px 0;
+            border-radius: 8px;
+                
+            }
+        .produto6{
+            margin: 0 5% 0 5%;
+            padding: 20px 0;
+            border-radius: 8px;
+                
+            }
+
     }
 
 `
