@@ -8,7 +8,7 @@ export default function MainLoja(){
     return(
         <DesignLojaMain>
             <h1>Loja</h1>
-            <h2>*CATEGORIA*</h2>
+            <h2 id="categorias">BONÉS</h2>
             <Sect1Loja/>
             <Sect2Loja/>
             <h2>*CATEGORIA*</h2> 
