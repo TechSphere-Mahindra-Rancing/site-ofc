@@ -17,6 +17,7 @@ export const DesingSect1Home = styled.section`
         width: 100%;
         display: block;
         height: 100vh;
+        object-fit: cover;
         border-bottom: 1px solid #981717;
     }
 
