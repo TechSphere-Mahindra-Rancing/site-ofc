@@ -3,17 +3,26 @@ import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import EstiloGlobal from './globalStyled';
-
 import MainHome from './router/Home/MainHome.jsx';
 import Error from './router/Error.jsx';
+import MainNoticias from './router/Noticias/MainNoticias.jsx'
+import MainLoja from './router/Store/MainLoja.jsx'
+import MainCorridas from './router/Corridas/MainCorridas.jsx'
+import MainSobre from './router/Sobre/MainSobre.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />, 
-    errorElement: <Error />, 
+    // Elemento Pai
+    path: "/", element: <App />, 
+    errorElement: <Error />,
+
+    // Elemento Filho
     children: [
-      { index: true, element: <MainHome /> }, 
+      { path:'/', element: <MainHome /> },
+      { path:'noticias', element: <MainNoticias/> },
+      { path:'store', element: <MainLoja/> },
+      { path:'corridas', element: <MainCorridas/>},
+      { path:'sobre', element: <MainSobre/>}
     ],
   },
 ]);

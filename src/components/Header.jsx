@@ -1,5 +1,6 @@
 import { DesignHeader } from "../styled"
 import Logo from '../../public/logo-mahindra.png'
+import { Link } from "react-router-dom"
 
 export default function Header(){
     return(
@@ -9,11 +10,11 @@ export default function Header(){
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">INÍCIO</a></li>
-                    <li><a href="#">NOTÍCIAS</a></li>
-                    <li><a href="#">LOJA</a></li>
-                    <li><a href="#">CORRIDAS</a></li>
-                    <li><a href="#">SOBRE</a></li>
+                    <li><Link to='/'>INÍCIO</Link></li>
+                    <li><Link to='/noticias'>NOTÍCIAS</Link></li>
+                    <li><Link to='/store'>LOJA</Link></li>
+                    <li><Link to='/corridas'>CORRIDAS</Link></li>
+                    <li><Link to='/sobre'>SOBRE</Link></li>
                 </ul>
             </nav>
             <div className="perfil">
