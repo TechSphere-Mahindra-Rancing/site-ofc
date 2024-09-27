@@ -3,6 +3,7 @@ import Footer from "./components/Footer"
 import Header from "./components/Header"
 // import Noticia2 from "./router/Noticias/Not2"
 // import MainNoticias from "./router/Noticias/MainNoticias"
+import MainLoja from "./router/Store/MainLoja"
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <>
       <Header/>
       {/* <Outlet/> */}
-
+      <MainLoja/>
       <Footer/>
     </>
   )
