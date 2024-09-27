@@ -69,6 +69,7 @@ export const DesignSect1Loja = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
         margin: 0 10% 0 10%;
         padding: 20px 0;
@@ -91,6 +92,7 @@ export const DesignSect1Loja = styled.section`
         padding: 20px 0;
         border-radius: 8px;
         transition: 0.4s;
+        justify-content: center;
     }
 
     .produto2:hover{
@@ -107,6 +109,7 @@ export const DesignSect1Loja = styled.section`
         margin: 0 10% 0 10%;
         padding: 20px 0;
         border-radius: 8px;
+        justify-content: center;
         transition: 0.4s;
 
     }
@@ -188,6 +191,7 @@ export const DesignSect2Loja = styled.section`
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
         margin: 0 10% 0 10%;
         padding: 20px 0;
+        justify-content: center;
         border-radius: 8px;
         transition: 0.5s;
     }   
@@ -205,6 +209,7 @@ export const DesignSect2Loja = styled.section`
         margin: 0 10% 0 10%;
         padding: 20px 0;
         border-radius: 8px;
+        justify-content: center;
         transition: 0.5s;
     }
 
@@ -221,6 +226,7 @@ export const DesignSect2Loja = styled.section`
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
         margin: 0 10% 0 10%;
         padding: 20px 0;
+        justify-content: center;
         border-radius: 8px;
         transition: 0.5s;
     }
@@ -300,6 +306,7 @@ display: grid;
         align-items: center;
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
         margin: 0 10% 0 10%;
+        justify-content: center;
         padding: 20px 0;
         border-radius: 8px;
         transition: 0.5s;
@@ -319,6 +326,7 @@ display: grid;
         margin: 0 10% 0 10%;
         padding: 20px 0;
         border-radius: 8px;
+        justify-content: center;
         transition: 0.4s;
     }
 
@@ -335,6 +343,7 @@ display: grid;
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
         margin: 0 10% 0 10%;
         padding: 20px 0;
+        justify-content: center;
         border-radius: 8px;
         transition: 0.4s;
 
@@ -415,6 +424,7 @@ export const DesignSect4Loja = styled.section`
         margin: 0 10% 0 10%;
         padding: 20px 0;
         border-radius: 8px;
+        justify-content: center;
         transition: 0.5s;
     }   
     .produto4:hover{
@@ -431,6 +441,7 @@ export const DesignSect4Loja = styled.section`
         margin: 0 10% 0 10%;
         padding: 20px 0;
         border-radius: 8px;
+        justify-content: center;
         transition: 0.5s;
     }
 
@@ -447,6 +458,7 @@ export const DesignSect4Loja = styled.section`
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
         margin: 0 10% 0 10%;
         padding: 20px 0;
+        justify-content: center;
         border-radius: 8px;
         transition: 0.5s;
     }
