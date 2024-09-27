@@ -3,12 +3,24 @@ import styled from "styled-components";
 export const DesignLojaMain = styled.main`
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
+    background-color: #f0f0f0;
 
+    #titulo{
+        color: #a52a2a;
+        font-size: 30px;
+        font-weight:400;
+        text-align: center;
+        margin-top: 10px;
+    }
 
-    #categorias{
+    .categorias{
         font-size: 42px;
-
+        height: 20%;
+        text-align: center;
+        font-weight: 400;
+        border-bottom: 1px solid #a52a2a;
+        color: #a52a2a;
     }
 `
 

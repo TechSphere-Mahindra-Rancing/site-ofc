@@ -8,18 +8,18 @@ export default function Sect3Loja(){
     return(
         <DesignSect3Loja>
             <div className="produto1">
-                <img src={Tennis1} alt="imagem de um bone branco" />
-                <h1>Boné branco</h1>
-                <h2>1000 P</h2>
+                <img src={Tennis1} alt="imagem de um tennis azul com detalhes brancos e pretos" />
+                <h1>Tennis Azul Com Branco</h1>
+                <h2>2000 P</h2>
             </div>  
             <div className="produto2">
-                <img src={Tennis2} alt="imagem de um bone branco" />
-                <h1>Dois Bonés brancos</h1>
-                <h2>1800 P</h2>
+                <img src={Tennis2} alt="imagem de um Tennis dourado" />
+                <h1>Tennis Esportivo Dourado</h1>
+                <h2>3400 P</h2>
             </div>  
             <div className="produto3">
-                <img src={Tennis3   } alt="imagem de um bone branco" />
-                <h1>Cap Mockup Boné</h1>
+                <img src={Tennis3} alt="imagem de um tennis verde com branco" />
+                <h1>Tennis Verde Natura</h1>
                 <h2>2000 P</h2>
             </div>  
         </DesignSect3Loja>

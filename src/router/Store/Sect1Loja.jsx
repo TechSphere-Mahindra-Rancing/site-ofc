@@ -14,12 +14,12 @@ export default function Sect1Loja(){
                 <h2>1000 P</h2>
             </div>  
             <div className="produto2">
-                <img src={Bone2} alt="imagem de um bone branco" />
+                <img src={Bone2} alt="imagem de dois bones brancos" />
                 <h1>Dois Bonés brancos</h1>
                 <h2>1800 P</h2>
             </div>  
             <div className="produto3">
-                <img src={Bone3} alt="imagem de um bone branco" />
+                <img src={Bone3} alt="imagem de um bone escrito cap mockup" />
                 <h1>Cap Mockup Boné</h1>
                 <h2>2000 P</h2>
             </div>  
