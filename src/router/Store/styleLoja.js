@@ -34,6 +34,17 @@ export const DesignLojaMain = styled.main`
 
     }
    
+
+    @media (max-width: 480px){
+        .categorias{
+        font-size: 20px;
+       }
+
+       #titulo{
+        font-size:20px;
+       }
+
+    }
 `
 
 export const DesignSect1Loja = styled.section`
@@ -150,7 +161,47 @@ export const DesignSect1Loja = styled.section`
 
     }
 
-    
+    @media (max-width: 480px){
+
+height: 20vh;
+
+h1{
+
+    font-size: 16px;
+}
+
+h2{
+
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+img{
+        width: 90px;
+        height: 140px;
+
+    }
+
+.produto1{
+padding: 10px 10px;
+
+}   
+
+
+.produto2{
+
+    padding: 10px 10px;
+}
+
+
+
+.produto3{
+    margin: 0 10% 0 10%;
+    padding: 10px 10px;
+}
+
+}
 
 `
 
@@ -267,6 +318,48 @@ export const DesignSect2Loja = styled.section`
             }
 
     }
+
+    @media (max-width: 480px){
+
+        height: 20vh;
+
+        h1{
+
+            font-size: 16px;
+        }
+
+        h2{
+
+            margin-top: 5px;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        img{
+                width: 90px;
+                height: 140px;
+
+            }
+
+        .produto4{
+        padding: 10px 10px;
+
+        }   
+
+
+        .produto5{
+
+            padding: 10px 10px;
+        }
+
+
+
+        .produto6{
+            margin: 0 10% 0 10%;
+            padding: 10px 10px;
+        }
+
+}
 
 `
 
@@ -386,6 +479,48 @@ display: grid;
 
     }
 
+    @media (max-width: 480px){
+
+height: 20vh;
+
+h1{
+
+    font-size: 16px;
+}
+
+h2{
+
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+img{
+        width: 90px;
+        height: 140px;
+
+    }
+
+.produto1{
+padding: 10px 10px;
+
+}   
+
+
+.produto2{
+
+    padding: 10px 10px;
+}
+
+
+
+.produto3{
+    margin: 0 10% 0 10%;
+    padding: 10px 10px;
+}
+
+}
+
 `
 
 export const DesignSect4Loja = styled.section`
@@ -497,6 +632,51 @@ export const DesignSect4Loja = styled.section`
             border-radius: 8px;
                 
             }
+
+    }
+
+    @media (max-width: 480px){
+
+        height: 20vh;
+
+        h1{
+
+            font-size: 16px;
+        }
+
+        h2{
+
+            margin-top: 5px;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        img{
+                width: 90px;
+                height: 140px;
+
+            }
+
+        .produto4{
+           padding: 10px 0;
+
+        }   
+
+
+        .produto5{
+
+            padding: 10px 10px;
+        }
+
+        .produto5:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .produto6{
+            margin: 0 10% 0 10%;
+            padding: 10px 0;
+        }
 
     }
 

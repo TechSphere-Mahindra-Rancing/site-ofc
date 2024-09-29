@@ -441,6 +441,7 @@ export const DesingSect5Home = styled.section`
     img{
         width: 430px;
         border-radius: 32px;
+        object-fit: cover;
     }
 
     .container-principal{
@@ -545,7 +546,7 @@ export const DesingSect5Home = styled.section`
 
         img{
             width: 260px;
-\
+
         }
 
         .container-principal{
