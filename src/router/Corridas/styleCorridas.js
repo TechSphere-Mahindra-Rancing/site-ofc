@@ -2,11 +2,13 @@ import styled from "styled-components";
 
 export const DesignCorridasMain = styled.main`
 
+    background-color: #f0f0f0;
+
     #titulo{
         font-size: 32px;
         color: #b32b39;
         text-align: center;
-        margin-top: 10px;
+        padding-top: 10px;
     }
 
     .categorias{

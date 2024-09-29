@@ -128,8 +128,7 @@ export const DesignSect1Loja = styled.section`
             font-size: 20px;
         }
 
-        height: 60vh;
-
+        height: 40vh;
         .produto1{
                 margin: 0 5% 0 5%;
                 padding: 20px 0;
@@ -246,7 +245,7 @@ export const DesignSect2Loja = styled.section`
             font-size: 20px;
         }
 
-        height: 60vh;
+        height: 40vh;
 
         .produto4{
                 margin: 0 5% 0 5%;
@@ -364,7 +363,7 @@ display: grid;
             font-size: 20px;
         }
 
-        height: 60vh;
+        height: 40vh;
 
         .produto1{
                 margin: 0 5% 0 5%;
@@ -478,7 +477,7 @@ export const DesignSect4Loja = styled.section`
             font-size: 20px;
         }
 
-        height: 60vh;
+        height: 40vh;
 
         .produto4{
                 margin: 0 5% 0 5%;

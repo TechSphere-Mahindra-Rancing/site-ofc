@@ -2,28 +2,112 @@ import styled from "styled-components";
 
 export const DesignMainNoticias = styled.main`
 
+
+    #titulo{
+        font-size: 32px;
+        color: #b32b39;
+        text-align: center;
+        font-weight: 400;
+        padding-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    background-color: #f0f0f0;
+
 `
 
 export const DesignSect1Noticias = styled.section`
 
-    display: flex;
+    
+    height: auto;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    p{
+        text-align: start;
+        font-size: 16px;
+    }
+
+    h1{
+        color:#b32b39 ;
+        font-weight: 400;
+    }
+    
 
     img{
-        width: 50%;
-
+        width: 300px;
+        border-radius: 8px;
     }   
 
 
     .container-noticia{
         display: flex;
         flex-direction: column;
+        
 
     }
+
+    .not1 { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 300px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        padding: 5% ;
+        transition: 0.4s;
+    }
+
+    .not1:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+
+    .not2 { 
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 300px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        padding: 5% ;
+        transition: 0.4s;
+    }
+
+    .not2:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+
+        
+    .infos1{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+        padding: 0 11%;
+        text-align: center;
+    }    
 
     .infos2{
-       
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+        padding: 0 11%;
+        text-align: center;
+    }   
+
+    .not3:hover{
+        cursor: pointer;
+        transform: scale(1.03);
     }
-`
+` 
 
 export const DesignSect2Noticias = styled.section`
 
