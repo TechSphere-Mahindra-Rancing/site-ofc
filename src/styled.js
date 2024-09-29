@@ -98,9 +98,54 @@ export const DesignHeader = styled.header`
         }
 
         
+    }
+
+    @media (max-width: 480px){
+
+            margin: 0;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #a52a2a;
+            display: grid;
+            grid-template-columns: 0.5fr 1.5fr 0.5fr;
+            grid-template-rows: 0.2fr;
+            align-items: center;
+            text-align: center;
+
+            .img-logo { 
+                
+            }
+
+            img{
+                width: 100px;
+            }
+
+            nav { 
+                grid-area: 1 / 2 / 2 / 3; 
+                margin-left: 7em;
+            }
+
+            nav ul{
+                display: flex;
+                text-align: center;
+            }
+            
+            nav ul li{
+                display: none;
+
+            }
+
+            nav a{
+                font-size: 10px;
+            }
+
+
+            .perfil a{
+                padding: 15px 20px;
+                border-radius: 50px;
+
+            }
         }
-
-
+        
 `
 
 export const DesignFooter = styled.footer`
@@ -259,6 +304,31 @@ export const DesignFooter = styled.footer`
         
             font-size: 10px;
         }
+
+        @media (max-width: 480px){
+
+            
+
+        }
+
+    }
+
+    @media (max-width: 480px){
+        
+        height: 25vh;
+        
+        img{
+            width: 40px;
+        }
+
+
+
+        form{
+      
+            margin: 2% 10%;
+        }
+
+
     }
 
 `
