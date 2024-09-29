@@ -14,6 +14,7 @@ export const DesignCorridasMain = styled.main`
         text-align: center;
         margin: 20px 0 20px;
         font-size: 30px;
+        font-weight: 300;
         border-bottom: 1px solid #b32b39;
         padding-bottom: 10px;
     }
@@ -27,6 +28,7 @@ export const DesingSect1Corrida = styled.section`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 60vh;
+    margin-bottom: 50px;
 
     .bloco-corrida{
         grid-area: 1 / 1 / 2 / 2; 
@@ -156,9 +158,10 @@ export const DesingSect1Corrida = styled.section`
 
 export const DesignSect2Corridas = styled.section`
 
-display: grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 60vh;
+    margin-bottom: 100px;
 
     .bloco-corrida{
         grid-area: 1 / 1 / 2 / 2; 
@@ -288,9 +291,10 @@ display: grid;
 
 export const DesignSect3Corridas = styled.section`
 
-display: grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 60vh;
+    margin-bottom: 100px;
 
     .bloco-corrida{
         grid-area: 1 / 1 / 2 / 2; 
@@ -302,6 +306,7 @@ display: grid;
         margin: 5% 5%;
         padding: 5% 0 5% 5%;
         transition: 0.4s;
+
     }
 
     .bloco-corrida:hover{

@@ -9,10 +9,10 @@ export default function MainCorridas(){
     return(
         <DesignCorridasMain>
             <h1 id="titulo">Corridas</h1>
-            <h2 className="categorias">Corridas Futuras</h2>
+            <h2 className="categorias">CORRIDAS FUTURAS</h2>
             <Sect1Corridas/>
             <Sect2Corridas/>
-            <h2 className="categorias">Corridas Passadas</h2>
+            <h2 className="categorias">CORRIDAS PASSADAS</h2>
             <Sect3Corridas/>
         </DesignCorridasMain>
     )
