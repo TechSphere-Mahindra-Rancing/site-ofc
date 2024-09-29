@@ -73,6 +73,29 @@ export const DesingSect1Home = styled.section`
 
     }
 
+    @media (max-width: 480px){
+
+        .container-inicial img{
+        height: 50vh;
+        width: 100%;
+        object-fit: COVER;
+    }
+
+        .container-inicial h1{
+
+            font-size: 22px;
+            
+            letter-spacing: 7px;
+        
+        }
+
+        .container-inicial a{   
+            margin-top: 60px;
+            font-size: 15px;
+            
+        }
+    }
+
 
     
 `
@@ -119,29 +142,65 @@ export const DesingSect2Home = styled.section`
      
         height: 60vh;
 
-    img{
-        width: 360px;
-    }
+        img{
+            width: 360px;
+        }
+        
+        img{
+            width: 250px;
+        }
+
+
+        .container-sect2-paragrafo{
     
-    img{
-        width: 250px;
+            margin: 0 5%;
+            gap: 10px;
+        }
+
+        .container-sect2-paragrafo h1{
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+
+        .container-sect2-paragrafo p {
+            font-size: 12px;
+        }
     }
 
+    @media (max-width: 480px){
 
-    .container-sect2-paragrafo{
-  
-        margin: 0 5%;
-        gap: 10px;
-    }
+        display: flex; 
+        flex-direction: column;
+        width: 100%;
+        height: 45vh;
 
-    .container-sect2-paragrafo h1{
-        font-size: 20px;
-        letter-spacing: 3px;
-    }
+        img{
+            width: 260px;
+        }
 
-    .container-sect2-paragrafo p {
-        font-size: 12px;
-    }
+
+        .container-sect2{
+            display: flex;
+            flex-direction: column;
+            margin: 10% 10%;
+            
+        }
+
+        .container-sect2-paragrafo{
+            margin-top: 20px;
+          
+        }
+
+        .container-sect2-paragrafo h1{
+            font-size: 22px;
+            letter-spacing: 3px;
+        }
+
+        .container-sect2-paragrafo p {
+            font-size: 12px;
+         
+        }
+
     }
 `
 
