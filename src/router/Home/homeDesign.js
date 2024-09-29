@@ -269,12 +269,46 @@ export const DesingSect3Home = styled.section`
         margin-right: 5%;
     } 
     }
-    
+
+    @media (max-width: 480px){
+
+        img{
+            object-fit: cover;
+        }
+
+
+        .container-sect3 img{
+            height: 50vh;
+        }
+
+        .paragrafos-container{
+            height: 10vh;
+
+            opacity: 85%;
+            margin-top: 90%;
+            
+            
+        }
+
+        .paragrafos-container h1{
+            font-size: 20px;
+            letter-spacing: 3px;
+            margin-left: 5%;
+        }
+
+        .paragrafos-container p{
+            font-size: 12px;
+            margin-left: 3%;
+            margin-right: 5%;
+        }
+
+
+}
 `
 
 export const DesingSect4Home = styled.section`
 
-display: flex;    
+        display: flex;    
         width: 100%;
         height: 80vh;
 
@@ -339,11 +373,47 @@ display: flex;
 
 
     }
+
+    @media (max-width: 480px){
+
+        display: flex;    
+        width: 100%;
+        height: 50vh;
+
+        img{
+            width: 260px;
+        }
+
+        .container-sect4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20% 10%;
+            
+        }
+
+        .container-sect4-paragrafo{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 5%;
+            gap: 10px;
+        }
+
+        .container-sect4-paragrafo h1{
+            font-size: 22px;
+            letter-spacing: 3px;
+        }
+
+        .container-sect4-paragrafo p {
+            font-size: 12px;
+        }
+
+    }
 `
 
 export const DesingSect5Home = styled.section`
 
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     height: 80vh;
@@ -456,6 +526,52 @@ display: flex;
             padding: 10px 20px;
             border-radius: 8px;
             margin-right: 62%;
+        }
+    }
+
+    @media (max-width: 480px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 65vh;
+        gap: 10%;
+
+        .titulo-subtitulo{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
+        img{
+            width: 260px;
+\
+        }
+
+        .container-principal{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 15%;
+            gap: 20px;
+        }
+
+        .paragrafo{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .paragrafo p{
+            font-size: 12px;
+        }
+
+        .paragrafo h1{
+            font-size: 22px;
+        }
+
+        .paragrafo a{
+            margin-right: 60%;
         }
     }
 
