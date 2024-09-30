@@ -315,7 +315,7 @@ export const DesignFooter = styled.footer`
 
     @media (max-width: 480px){
         
-        height: 25vh;
+        height: 250px;
         
         img{
             width: 40px;

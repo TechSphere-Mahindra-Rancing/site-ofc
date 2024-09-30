@@ -172,7 +172,7 @@ export const DesingSect2Home = styled.section`
         display: flex; 
         flex-direction: column;
         width: 100%;
-        height: 45vh;
+        height: 500px;
 
         img{
             width: 260px;
@@ -272,13 +272,14 @@ export const DesingSect3Home = styled.section`
 
     @media (max-width: 480px){
 
+        height: 440px;
         img{
             object-fit: cover;
         }
 
 
         .container-sect3 img{
-            height: 50vh;
+            height: 470px;
         }
 
         .paragrafos-container{
@@ -378,7 +379,7 @@ export const DesingSect4Home = styled.section`
 
         display: flex;    
         width: 100%;
-        height: 50vh;
+        height: 500px;
 
         img{
             width: 260px;
@@ -534,7 +535,7 @@ export const DesingSect5Home = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 65vh;
+        height: 700px;
         gap: 10%;
 
         .titulo-subtitulo{
