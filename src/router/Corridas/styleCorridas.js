@@ -155,7 +155,63 @@ export const DesingSect1Corrida = styled.section`
         font-size: 25.5px;
     }
 
+    @media (max-width: 768px){
+    
+    height: 30vh;
 
+    img{
+        width: 105px;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 8px;
+        
+    }
+
+
+    .info-corrida h1{
+        font-size: 26px;
+    }
+
+    .local-round{
+        font-size: 15.5px;
+    }
+
+    h1 em{
+        font-size: 20px;
+    }
+
+    h3 em{
+        color: red;
+        font-size: 20px;
+       
+    }
+
+
+    .info-corrida2 h1{
+        font-size: 26px;
+    }
+
+    .local-round2{
+        font-size: 15.5px;
+    }
+
+
+    .info-corrida3 h1{
+        font-size: 26px;
+    }
+
+    .local-round3{
+        font-size: 15.5px;
+    }
+
+
+    }
+
+
+
+    @media (max-width: 480px){
+
+    }
 `
 
 export const DesignSect2Corridas = styled.section`
@@ -287,6 +343,64 @@ export const DesignSect2Corridas = styled.section`
     .local-round3{
         font-size: 25.5px;
     }
+
+    @media (max-width: 768px){
+
+            
+    height: 30vh;
+
+    img{
+        width: 105px;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 8px;
+        
+    }
+
+
+    .info-corrida h1{
+        font-size: 26px;
+    }
+
+    .local-round{
+        font-size: 15.5px;
+    }
+
+    h1 em{
+        font-size: 20px;
+    }
+
+    h3 em{
+        color: red;
+        font-size: 20px;
+    
+    }
+
+
+    .info-corrida2 h1{
+        font-size: 26px;
+    }
+
+    .local-round2{
+        font-size: 15.5px;
+    }
+
+
+    .info-corrida3 h1{
+        font-size: 26px;
+    }
+
+    .local-round3{
+        font-size: 15.5px;
+    }
+            
+}
+
+
+
+    @media (max-width: 480px){
+
+}
 
 `
 
@@ -420,6 +534,58 @@ export const DesignSect3Corridas = styled.section`
 
     .local-round3{
         font-size: 25.5px;
+    }
+
+    @media (max-width: 768px){
+    
+        margin-bottom: 20px;
+    height: 30vh;
+
+    img{
+        width: 105px;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 8px;
+        
+    }
+
+
+    .info-corrida h1{
+        font-size: 26px;
+    }
+
+    .local-round{
+        font-size: 15.5px;
+    }
+
+    h1 em{
+        font-size: 20px;
+    }
+
+    h3 em{
+        color: red;
+        font-size: 20px;
+       
+    }
+
+
+    .info-corrida2 h1{
+        font-size: 26px;
+    }
+
+    .local-round2{
+        font-size: 15.5px;
+    }
+
+
+    .info-corrida3 h1{
+        font-size: 26px;
+    }
+
+    .local-round3{
+        font-size: 15.5px;
+    }
+
     }
 
 `
