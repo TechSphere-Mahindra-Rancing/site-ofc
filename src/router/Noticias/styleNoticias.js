@@ -107,15 +107,48 @@ export const DesignSect1Noticias = styled.section`
         cursor: pointer;
         transform: scale(1.03);
     }
+
+    @media (max-width: 768px){
+        height: auto;
+
+
+    p{
+        text-align: start;
+        font-size: 14px;
+    }
+
+    h1{
+        color:#b32b39 ;
+        font-weight: 400;
+    }
+    
+
+    img{
+        width: 200px;
+    }   
+
+
+
+    .not1 { 
+        margin: 20px 100px;
+
+    }
+
+
+    .not2 { 
+        margin: 20px 100px;
+    }
+
+        
+
+    }
+
+    @media (max-width: 480px){
+
+    }
+
 ` 
 
-export const DesignSect2Noticias = styled.section`
-
-`
-
-export const DesignSect3Noticias = styled.section`
-
-`
 
 export const DesingNoticia1 = styled.main`
 
