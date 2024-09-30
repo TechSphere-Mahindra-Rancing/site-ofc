@@ -9,6 +9,7 @@ import MainNoticias from './router/Noticias/MainNoticias.jsx'
 import MainLoja from './router/Store/MainLoja.jsx'
 import MainCorridas from './router/Corridas/MainCorridas.jsx'
 import MainSobre from './router/Sobre/MainSobre.jsx';
+import MainPerfil from './router/Perfil/MainPerfil.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,8 @@ const router = createBrowserRouter([
       { path:'noticias', element: <MainNoticias/> },
       { path:'store', element: <MainLoja/> },
       { path:'corridas', element: <MainCorridas/>},
-      { path:'sobre', element: <MainSobre/>}
+      { path:'sobre', element: <MainSobre/>},
+      {path:'perfil',element: <MainPerfil/>}
     ],
   },
 ]);
