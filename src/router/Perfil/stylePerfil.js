@@ -30,12 +30,14 @@ export const DesingSect1Perfil = styled.section`
         flex-direction: column;
         margin-left: 60px;
         
+        
     }
 
     input{
         width: 400px ;
         height: 50px;
         margin: 20px 5px;
+        border: solid 1px #FB9191;
     }
 
     .perfil-input-extra{
