@@ -332,6 +332,62 @@ export const DesingNoticia1 = styled.main`
         }
  
     }
+
+    @media (max-width: 480px){
+
+        img{
+        width: 200px;
+    }
+        gap: 10px;
+
+        #titulo-principal{
+            font-size: 20px;
+            margin-top: 3%;
+            color: #b32b39;
+            margin-bottom: 100px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+
+        h1{
+            color: #b32b39;
+            font-size: 20px;
+        }
+
+        .noticia1{
+            padding:0 5%;
+            flex-direction: column-reverse;
+            gap: 10px;
+            margin-top: -280px;
+            
+        }
+
+        .paragrafo1{
+            gap: 15px;
+            padding: 0 5% 0 5%;
+            
+        }
+
+        .noticia2{
+            margin-top: -170px;
+        }
+        
+        .noticia3{
+            flex-direction: column;
+            margin: 20px 0;
+            gap: 20px;
+            height: 100px;
+        }
+
+        .noticia4{
+            flex-direction: column-reverse;
+            gap: 10px;
+            margin-top: -300px;
+        }
+
+    }
 `
 export const DesignNoticia2 = styled.main`
     img{
