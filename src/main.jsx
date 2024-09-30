@@ -11,11 +11,15 @@ import MainCorridas from './router/Corridas/MainCorridas.jsx';
 import MainSobre from './router/Sobre/MainSobre.jsx';
 import MainPerfil from './router/Perfil/MainPerfil.jsx';
 import MainCadastro from './router/Cadastro/MainCadastro.jsx'; // Adicionando rota de cadastro
-import MainLogin from './router/Login/MainLogin.jsx'; // Adicionando rota de login
+import MainLogin from './router/Login/MainLogin.jsx';       // Adicionando rota de login
+import Noticia1 from './router/Noticias/No1.jsx';         // Adicionando a rota de Noticia1
+import Noticia2 from './router/Noticias/Not2.jsx';         // Adicionando a rota de Noticia2
+import MainPiloto from './router/PaginaPilotos/MainPilotos.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/", element: <App />, 
+    path: "/", 
+    element: <App />, 
     errorElement: <Error />,
     children: [
       { path:'/', element: <MainHome /> },
@@ -26,6 +30,9 @@ const router = createBrowserRouter([
       { path:'perfil', element: <MainPerfil/>},     // Página de perfil
       { path:'cadastro', element: <MainCadastro/>}, // Página de cadastro
       { path:'login', element: <MainLogin/>},       // Página de login
+      { path:'noticia1', element: <Noticia1/> },    // Página da Noticia 1
+      { path:'noticia2', element: <Noticia2/> },
+      { path:'pilotos', element: <MainPiloto/> },
     ],
   },
 ]);
