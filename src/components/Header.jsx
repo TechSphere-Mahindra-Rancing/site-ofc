@@ -19,7 +19,7 @@ export default function Header(){
                 </ul>
             </nav>
             <div className="perfil">
-                <Link to='/perfil'>Perfil</Link>
+                <Link to='/cadastro'>Perfil</Link>
             </div>
         </DesignHeader>
     )
