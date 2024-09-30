@@ -55,5 +55,74 @@ export const DesignPiloto = styled.main`
         padding: 0 40px;
     }
 
-    
+    @media (max-width: 768px){
+
+        img{
+        width: 200px;}
+
+    .piloto1{
+
+        margin: 30px 50px;
+        border-radius: 16px;
+    }
+
+    .paragrafo1{
+        padding: 20px 40px;
+    }
+
+
+    p{
+        font-size: 12px;
+    }
+
+    .piloto2{
+
+        margin: 30px 50px;
+        border-radius: 16px;
+    }
+
+    .paragrafo2{
+        padding: 20px 40px;
+    }
+
+    }
+
+
+    @media (max-width: 480px){
+        img{
+        width: 200px;}
+
+    .piloto1{
+        flex-direction: column;
+        margin: 30px 30px;
+        border-radius: 16px;
+        padding: 20px 0;
+    }
+
+    .paragrafo1{
+        padding: 20px 40px;
+    }
+
+
+    p{
+        font-size: 12px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .piloto2{
+        flex-direction: column;
+        margin: 30px 30px;
+        border-radius: 16px;
+        padding: 20px 0;
+    }
+
+    .paragrafo2{
+        padding: 20px 40px;
+    }
+
+
+    }
 `
