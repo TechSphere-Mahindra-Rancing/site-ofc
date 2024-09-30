@@ -3,7 +3,7 @@
 export default function Error(){
     return(
         <>
-        <h1>erro</h1>
+        <h1>error 404 - PAGE NOT FOUND!!!!!</h1>
         </>
     )
 }
