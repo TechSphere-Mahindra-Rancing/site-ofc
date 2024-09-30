@@ -144,6 +144,34 @@ export const DesignSect1Noticias = styled.section`
     }
 
     @media (max-width: 480px){
+        height: auto;
+
+
+        p{
+            text-align: start;
+            font-size: 12px;
+        }
+
+        h1{
+            font-size: 20px;
+        }
+
+
+        img{
+            width: 150px;
+        }   
+
+
+
+        .not1 { 
+            margin: 20px 50px;
+
+        }
+
+
+        .not2 { 
+            margin: 20px 50px;
+        }
 
     }
 
