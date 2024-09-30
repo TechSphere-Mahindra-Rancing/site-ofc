@@ -33,7 +33,7 @@ export default function Sect1Corridas(){
             <div className="bloco-corrida3">
                 <img src={Pista3} alt="imagem do local da próx corrida" />
                 <div className="info-corrida3">
-                    <h1 id="Data-corrida3"><em>5</em> JUN</h1>
+                    <h1 id="data-corrida3"><em>5</em> JUN</h1>
                     <div className="local-round3">
                         <h2 id="local3">Los Angeles</h2>
                         <hr />

@@ -21,6 +21,18 @@ export const DesignCorridasMain = styled.main`
         padding-bottom: 10px;
     }
 
+    @media (max-width: 480px){
+
+    #titulo{
+        font-size: 22px;
+    }
+
+    .categorias{
+
+        font-size: 18px;
+    }
+    }
+
 `
 
 export const DesingSect1Corrida = styled.section`
@@ -211,6 +223,57 @@ export const DesingSect1Corrida = styled.section`
 
     @media (max-width: 480px){
 
+            
+    margin-bottom: 20px;
+    height: 170px;
+
+    img{
+        width: 45px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 8px;
+        
+    }
+
+
+    .info-corrida h1{
+        font-size: 16px;
+    }
+
+    .local-round{
+        font-size: 10px;
+    }
+
+    h1 em{
+        font-size: 16px;
+    }
+
+    h3 em{
+        color: red;
+        font-size: 12px;
+       
+    }
+
+
+    .info-corrida2 h1{
+        font-size: 16px;
+    }
+
+    .local-round2{
+        font-size: 10px;
+    }
+
+
+    .info-corrida3 h1{
+        font-size: 16px;
+    }
+
+    .local-round3{
+        font-size: 10px;
+    }
+
+    
+
     }
 `
 
@@ -400,6 +463,58 @@ export const DesignSect2Corridas = styled.section`
 
     @media (max-width: 480px){
 
+            
+        margin-bottom: 20px;
+    height: 170px;
+
+    img{
+        width: 45px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 8px;
+        
+    }
+
+
+    .info-corrida h1{
+        font-size: 16px;
+    }
+
+    .local-round{
+        font-size: 10px;
+    }
+
+    h1 em{
+        font-size: 16px;
+    }
+
+    h3 em{
+        color: red;
+        font-size: 12px;
+       
+    }
+
+
+    .info-corrida2 h1{
+        font-size: 16px;
+    }
+
+    .local-round2{
+        font-size: 10px;
+    }
+
+
+    .info-corrida3 h1{
+        font-size: 16px;
+    }
+
+    .local-round3{
+        font-size: 10px;
+    }
+
+    
+
+
 }
 
 `
@@ -538,7 +653,7 @@ export const DesignSect3Corridas = styled.section`
 
     @media (max-width: 768px){
     
-        margin-bottom: 20px;
+    margin-bottom: 70px;
     height: 30vh;
 
     img{
@@ -587,6 +702,62 @@ export const DesignSect3Corridas = styled.section`
     }
 
     }
+
+    @media (max-width: 480px){
+
+            
+margin-bottom: 20px;
+height: 170px;
+
+img{
+width: 45px;
+height: 80px;
+object-fit: cover;
+border-radius: 8px;
+
+}
+
+
+.info-corrida h1{
+font-size: 16px;
+}
+
+.local-round{
+font-size: 10px;
+}
+
+h1 em{
+font-size: 16px;
+}
+
+h3 em{
+color: red;
+font-size: 12px;
+
+}
+
+
+.info-corrida2 h1{
+font-size: 16px;
+}
+
+.local-round2{
+font-size: 10px;
+}
+
+
+.info-corrida3 h1{
+font-size: 16px;
+}
+
+.local-round3{
+font-size: 10px;
+}
+
+
+
+
+}
 
 `
 
