@@ -37,11 +37,11 @@ Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 
 1. Clone o repositório do projeto para a sua máquina local utilizando o comando:
 
-   git clone <URL_DO_REPOSITORIO>
+   git clone https://github.com/TechSphere-Mahindra-Rancing/site-ofc.git
 
 2. Navegue até o diretório do projeto:
 
-   cd <NOME_DO_DIRETORIO>
+   cd site-ofc
 
 3. Instale as dependências necessárias usando o npm:
 
@@ -105,12 +105,11 @@ Before you begin, make sure you have the following installed on your machine:
 
 1. Clone the project repository to your local machine using the command:
 
-   git clone <REPOSITORY_URL>
+   git clone https://github.com/TechSphere-Mahindra-Rancing/site-ofc.git
 
 2. Navigate to the project directory:
 
-   cd <DIRECTORY_NAME>
-
+   cd site-ofc
 3. Install the necessary dependencies using npm:
 
    npm install
