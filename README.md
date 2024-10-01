@@ -32,6 +32,43 @@ Este projeto é um site desenvolvido para atender ao desafio proposto pela Mahin
 Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 
 - [Node.js](https://nodejs.org/) (versão 14 ou superior)
+
+# Formula E Project
+
+This project is a website developed to meet the challenge proposed by Mahindra, where students are to propose solutions to popularize Formula E. The site is an interactive platform aimed at engaging users with the world of racing, offering an immersive and enjoyable experience.
+
+## Description
+
+### Main Features:
+
+- **Multiple Navigation Tabs**: The site includes several sections, including:
+  - **Home Page**: A summary of the site and its main features.
+  - **News**: Updates and news about Formula E and related events.
+  - **Points Store**: A system where users can purchase points that can be used for betting.
+  - **Races**: Access to live races, including simulations or real broadcasts, depending on the user’s subscription level.
+  - **About**: Information about the project and its objectives.
+  - **Profile**: Area for users to manage their information and points.
+  - **Registration and Login**: Functionality for new users to create accounts and existing users to log in.
+
+- **Points and Betting System**: Users can acquire points through the store and use them to place bets on live races. This system gamifies the experience, allowing users to actively participate in races and competitions.
+
+- **Pro Subscription**: Users who opt for the Pro subscription will have access to live broadcasts with images and detailed information about the teams and cars. This subscription provides an enriching and informative experience, allowing users to enjoy more in-depth coverage of electric races.
+
+## Technologies Used
+
+- **React**: For building the user interface.
+- **React Router**: For navigation between the different pages of the site.
+- **Styled Components**: For styling the components.
+- **Local Storage**: For storing user data (such as login and registration).
+- **JSON Server** (or similar): To simulate a backend API, if you are using one.
+
+## Prerequisites
+
+Before you begin, make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (version 14 or above)
+- [npm](https://www.npmjs.com/) (usually installed along with Node.js)
+
 - [npm](https://www.npmjs.com/) (geralmente instalado junto com o Node.js)
 
 
