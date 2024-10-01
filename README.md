@@ -25,7 +25,7 @@ Este projeto é um site desenvolvido para atender ao desafio proposto pela Mahin
 - **React Router**: Para a navegação entre as diferentes páginas do site.
 - **Styled Components**: Para a estilização dos componentes.
 - **Local Storage**: Para armazenamento de dados do usuário (como login e registro).
-- **JSON Server** (ou similar): Para simular uma API de backend, caso você utilize um.
+
 
 ## Pré-requisitos
 
@@ -90,7 +90,7 @@ This project is a website developed to meet the challenge proposed by Mahindra, 
 - **React Router**: For navigation between the different pages of the site.
 - **Styled Components**: For styling the components.
 - **Local Storage**: For storing user data (such as login and registration).
-- **JSON Server** (or similar): To simulate a backend API, if you are using one.
+
 
 ## Prerequisites
 
