@@ -33,6 +33,36 @@ Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 
 - [Node.js](https://nodejs.org/) (versão 14 ou superior)
 
+## Instalação
+
+1. Clone o repositório do projeto para a sua máquina local utilizando o comando:
+
+   git clone <URL_DO_REPOSITORIO>
+
+2. Navegue até o diretório do projeto:
+
+   cd <NOME_DO_DIRETORIO>
+
+3. Instale as dependências necessárias usando o npm:
+
+   npm install
+
+4. Após a instalação, você pode iniciar o projeto com o comando:
+
+   npm start
+
+5. Abra seu navegador e acesse o endereço:
+
+   http://localhost:3000
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
+
+## Licença
+
+Este projeto é licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
 # Formula E Project
 
 This project is a website developed to meet the challenge proposed by Mahindra, where students are to propose solutions to popularize Formula E. The site is an interactive platform aimed at engaging users with the world of racing, offering an immersive and enjoyable experience.
@@ -70,6 +100,36 @@ Before you begin, make sure you have the following installed on your machine:
 - [npm](https://www.npmjs.com/) (usually installed along with Node.js)
 
 - [npm](https://www.npmjs.com/) (geralmente instalado junto com o Node.js)
+
+## Installation
+
+1. Clone the project repository to your local machine using the command:
+
+   git clone <REPOSITORY_URL>
+
+2. Navigate to the project directory:
+
+   cd <DIRECTORY_NAME>
+
+3. Install the necessary dependencies using npm:
+
+   npm install
+
+4. After installation, you can start the project with the command:
+
+   npm start
+
+5. Open your browser and access the address:
+
+   http://localhost:3000
+
+## Contribution
+
+Contributions are welcome! Feel free to open issues or pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 
