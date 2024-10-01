@@ -49,7 +49,7 @@ Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 
 4. Após a instalação, você pode iniciar o projeto com o comando:
 
-   npm start
+   npm run dev ou npm start
 
 5. Abra seu navegador e acesse o endereço:
 
@@ -116,7 +116,7 @@ Before you begin, make sure you have the following installed on your machine:
 
 4. After installation, you can start the project with the command:
 
-   npm start
+   npm run dev or npm start
 
 5. Open your browser and access the address:
 
