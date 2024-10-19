@@ -14,6 +14,8 @@ export default function Header(){
                     <li><Link to='/noticias'>NOTÍCIAS</Link></li>
                     <li><Link to='/store'>LOJA</Link></li>
                     <li><Link to='/corridas'>CORRIDAS</Link></li>
+                    <li><Link to='/dashboard'>DASHBOARD</Link></li>
+                    <li><Link to='/weather'>WEATHER</Link></li>
                     <li><Link to='/sobre'>SOBRE</Link></li>
                     
                 </ul>

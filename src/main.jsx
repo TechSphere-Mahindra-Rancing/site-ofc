@@ -15,6 +15,8 @@ import MainLogin from './router/Login/MainLogin.jsx';       // Adicionando rota 
 import Noticia1 from './router/Noticias/No1.jsx';         // Adicionando a rota de Noticia1
 import Noticia2 from './router/Noticias/Not2.jsx';         // Adicionando a rota de Noticia2
 import MainPiloto from './router/PaginaPilotos/MainPilotos.jsx'
+import MainDashboard from './router/Dashboard/MainDashboard.jsx';
+import MainWeather from './router/Weather/MainWeather.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,8 @@ const router = createBrowserRouter([
       { path:'noticia1', element: <Noticia1/> },    // Página da Noticia 1
       { path:'noticia2', element: <Noticia2/> },
       { path:'pilotos', element: <MainPiloto/> },
+      {path:'dashboard', element: <MainDashboard/>},
+      {path:'weather', element: <MainWeather/>}
     ],
   },
 ]);
