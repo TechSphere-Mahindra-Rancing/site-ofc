@@ -1,684 +1,199 @@
 import styled from "styled-components";
 
 export const DesignLojaMain = styled.main`
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    background-color: #f0f0f0;
+    .div-titulo{
+        margin: 0 600px;
+        padding-top: 20px;
+        
+    }
 
     #titulo{
-        color: #a52a2a;
-        font-size: 30px;
-        font-weight:400;
+        font-size: 32px;
+        color: #001734;
         text-align: center;
-        margin-top: 10px;
+        font-weight: 600;
+        background-color: #f0f0f0;
+        border-radius: 20px;
     }
+
+    background: linear-gradient(to left, #003e8e, #BB3737);
 
     .categorias{
-        font-size: 42px;
-        height: 20%;
-        text-align: center;
-        font-weight: 400;
-        border-bottom: 1px solid #a52a2a;
-        color: #a52a2a;
-    }
-
-    @media (max-width: 768px){
-       .categorias{
+        color: white;
+        border-bottom: 2px solid white;
+        margin-left: 100px;
+        margin-right: 70%;
         font-size: 30px;
-       }
-
-       #titulo{
-        font-size: 20px;
-       }
-
+        font-weight: 600;
     }
-   
 
-    @media (max-width: 480px){
-        .categorias{
-        font-size: 20px;
-       }
-
-       #titulo{
-        font-size:20px;
-       }
-
-    }
 `
 
 export const DesignSect1Loja = styled.section`
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  
-    height: 70vh;
 
-    h1{
-        margin-top: 10px;
-        font-weight: 200;
-        font-size: 26px;
+    .div1{
+        background-color: rgba(255, 255, 255, 0.1);
+        display: flex;
+        margin: 50px 100px;
+        gap: 20px;
+        padding: 20px 20px;
+        border-radius: 24px;
     }
 
-    h2{
-        background-color: #ffdae3;
-        margin-top: 10px;
-        padding: 5px 10px;
-        font-weight: 500;
-        border-radius: 8px;
+    #parag1-div1{
+        color:#001734 ;
+        font-size: 20px;
+        font-weight: 600;
     }
+
+    #parag2-div1{
+        color: white;
+        font-size: 16px;
+        font-family: 600;
+    }
+
 
     img{
-        width: 300px;
-        height: 380px;
-        object-fit: cover;
-        border: 0.5px solid rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
+        width: 30px;
+        height: 30px;
     }
 
-    .produto1{
-        grid-area: 1 / 1 / 2 / 2;
+    .div-divs{
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        margin: 0 10% 0 10%;
-        padding: 20px 0;
-        border-radius: 8px;
-        transition: 0.5s;
-    }
-
-    .produto1:hover{
-        transform: scale(1.05);
-        cursor: pointer;
-    }
-
-    .produto2{
-        grid-area: 1 / 2 / 2 / 3;
-        display: flex;
-        flex-direction: column;
+        gap: 50px;
         align-items: center;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        margin: 0 10% 0 10%;
-        padding: 20px 0;
-        border-radius: 8px;
-        transition: 0.4s;
-        justify-content: center;
     }
 
-    .produto2:hover{
-        transform: scale(1.05);
-        cursor: pointer;
+    .div2{
+        background-color: white;
+        min-width: 250px;
+        min-height: 150px;
+        border-radius: 24px;
     }
 
-    .produto3{
-        grid-area: 1 / 3 / 2 / 4;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        margin: 0 10% 0 10%;
-        padding: 20px 0;
-        border-radius: 8px;
-        justify-content: center;
-        transition: 0.4s;
-
+    .div3{
+        background-color: white;
+        min-width: 250px;
+        min-height: 150px;
+        border-radius: 24px;
+    }
+    .div4{
+        background-color: white;
+        min-width: 250px;
+        min-height: 150px;
+        border-radius: 24px;
     }
 
-    .produto3:hover{
-        transform: scale(1.05);
-        cursor: pointer;
+    .div5{
+        background-color: white;
+        min-width: 250px;
+        min-height: 150px;
+        border-radius: 24px;
     }
-    @media (max-width: 768px){
-        img{
-            width: 180px;
-            height: 260px;
-        }
-
-        h1{
-            font-size: 20px;
-        }
-
-        height: 40vh;
-        .produto1{
-                margin: 0 5% 0 5%;
-                padding: 20px 0;
-                border-radius: 8px;
-                
-            }
-        .produto2{
-            margin: 0 5% 0 5%;
-            padding: 20px 0;
-            border-radius: 8px;
-                
-            }
-        .produto3{
-            margin: 0 5% 0 5%;
-            padding: 20px 0;
-            border-radius: 8px;
-                
-            }
-
-    }
-
-    @media (max-width: 480px){
-
-height: 20vh;
-
-h1{
-
-    font-size: 16px;
-}
-
-h2{
-
-    margin-top: 5px;
-    padding: 5px 10px;
-    font-size: 14px;
-}
-
-img{
-        width: 90px;
-        height: 140px;
-
-    }
-
-.produto1{
-padding: 10px 10px;
-
-}   
-
-
-.produto2{
-
-    padding: 10px 10px;
-}
-
-
-
-.produto3{
-    margin: 0 10% 0 10%;
-    padding: 10px 10px;
-}
-
-}
 
 `
 
 
 export const DesignSect2Loja = styled.section`
-
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    height: 70vh;
-
-    h1{
-        font-weight: 200;
-        font-size: 26px;
+    .div1{
+        background-color: rgba(255, 255, 255, 0.1);
+        max-width: 1130px;
+        height: 410px;
+        margin: 80px 100px;
+        border-radius: 24px;
     }
-
-    h2{
-        background-color: #ffdae3;
-        margin-top: 10px;
-        padding: 5px 10px;
-        font-weight: 500;
-        border-radius: 8px;
-    }
-
-    img{
-            width: 300px;
-            height: 380px;
-            object-fit: cover;
-            border: 0.5px solid rgba(0, 0, 0, 0.2);
-        }
-
-    .produto4{
-        grid-area: 1 / 1 / 2 / 2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        margin: 0 10% 0 10%;
-        padding: 20px 0;
-        justify-content: center;
-        border-radius: 8px;
-        transition: 0.5s;
-    }   
-    .produto4:hover{
-        transform: scale(1.05);
-        cursor: pointer;
-    }
-
-    .produto5{
-        grid-area: 1 / 2 / 2 / 3;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        margin: 0 10% 0 10%;
-        padding: 20px 0;
-        border-radius: 8px;
-        justify-content: center;
-        transition: 0.5s;
-    }
-
-    .produto5:hover{
-        transform: scale(1.05);
-        cursor: pointer;
-    }
-
-    .produto6{
-        grid-area: 1 / 3 / 2 / 4;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        margin: 0 10% 0 10%;
-        padding: 20px 0;
-        justify-content: center;
-        border-radius: 8px;
-        transition: 0.5s;
-    }
-
-    .produto6:hover{
-        transform: scale(1.05);
-        cursor: pointer;
-    }
-
-    @media (max-width: 768px){
-        img{
-            width: 180px;
-            height: 260px;
-        }
-
-        h1{
-            font-size: 20px;
-        }
-
-        height: 40vh;
-
-        .produto4{
-                margin: 0 5% 0 5%;
-                padding: 20px 0;
-                border-radius: 8px;
-                
-            }
-        .produto5{
-            margin: 0 5% 0 5%;
-            padding: 20px 0;
-            border-radius: 8px;
-                
-            }
-        .produto6{
-            margin: 0 5% 0 5%;
-            padding: 20px 0;
-            border-radius: 8px;
-                
-            }
-
-    }
-
-    @media (max-width: 480px){
-
-        height: 20vh;
-
-        h1{
-
-            font-size: 16px;
-        }
-
-        h2{
-
-            margin-top: 5px;
-            padding: 5px 10px;
-            font-size: 14px;
-        }
-
-        img{
-                width: 90px;
-                height: 140px;
-
-            }
-
-        .produto4{
-        padding: 10px 10px;
-
-        }   
-
-
-        .produto5{
-
-            padding: 10px 10px;
-        }
-
-
-
-        .produto6{
-            margin: 0 10% 0 10%;
-            padding: 10px 10px;
-        }
-
-}
 
 `
 
 export const DesignSect3Loja = styled.section`
 
-display: grid;
-    grid-template-columns: repeat(3, 1fr);  
-    height: 70vh;
-
-    h1{
-        margin-top: 10px;
-        font-weight: 200;
-        font-size: 26px;
-    }
-
-    h2{
-        background-color: #ffdae3;
-        margin-top: 10px;
-        padding: 5px 10px;
-        font-weight: 500;
-        border-radius: 8px;
-    }
-
-    img{
-        width: 300px;
-        height: 380px;
-        object-fit: cover;
-        border: 0.5px solid rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-    }
-
-    .produto1{
-        grid-area: 1 / 1 / 2 / 2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        margin: 0 10% 0 10%;
-        justify-content: center;
-        padding: 20px 0;
-        border-radius: 8px;
-        transition: 0.5s;
-    }
-
-    .produto1:hover{
-        transform: scale(1.05);
-        cursor: pointer;
-    }
-
-    .produto2{
-        grid-area: 1 / 2 / 2 / 3;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        margin: 0 10% 0 10%;
-        padding: 20px 0;
-        border-radius: 8px;
-        justify-content: center;
-        transition: 0.4s;
-    }
-
-    .produto2:hover{
-        transform: scale(1.05);
-        cursor: pointer;
-    }
-
-    .produto3{
-        grid-area: 1 / 3 / 2 / 4;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        margin: 0 10% 0 10%;
-        padding: 20px 0;
-        justify-content: center;
-        border-radius: 8px;
-        transition: 0.4s;
-
-    }
-
-    .produto3:hover{
-        transform: scale(1.05);
-        cursor: pointer;
-    }
-
-    @media (max-width: 768px){
-        img{
-            width: 180px;
-            height: 260px;
-        }
-
-        h1{
-            font-size: 20px;
-        }
-
-        height: 40vh;
-
-        .produto1{
-                margin: 0 5% 0 5%;
-                padding: 20px 0;
-                border-radius: 8px;
-                
-            }
-        .produto2{
-            margin: 0 5% 0 5%;
-            padding: 20px 0;
-            border-radius: 8px;
-                
-            }
-        .produto3{
-            margin: 0 5% 0 5%;
-            padding: 20px 0;
-            border-radius: 8px;
-                
-            }
-
-    }
-
-    @media (max-width: 480px){
-
-height: 20vh;
-
-h1{
-
-    font-size: 16px;
-}
-
-h2{
-
-    margin-top: 5px;
-    padding: 5px 10px;
-    font-size: 14px;
-}
-
 img{
-        width: 90px;
-        height: 140px;
-
+        width: 30px;
+        height: 30px;
     }
 
-.produto1{
-padding: 10px 10px;
+    .div-divs{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        margin: 80px 0;
+    }
 
-}   
+    .div2{
+        background-color: white;
+        min-width: 250px;
+        min-height: 250px;
+        border-radius: 24px;
+    }
 
+    .div3{
+        background-color: white;
+        min-width: 250px;
+        min-height: 250px;
+        border-radius: 24px;
+    }
+    .div4{
+        background-color: white;
+        min-width: 250px;
+        min-height: 250px;
+        border-radius: 24px;
+    }
 
-.produto2{
-
-    padding: 10px 10px;
-}
-
-
-
-.produto3{
-    margin: 0 10% 0 10%;
-    padding: 10px 10px;
-}
-
-}
+    .div5{
+        background-color: white;
+        min-width: 250px;
+        min-height: 250px;
+        border-radius: 24px;
+    }    
 
 `
 
 export const DesignSect4Loja = styled.section`
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    height: 70vh;
-    margin-bottom: 100px;
-    h1{
-        font-weight: 200;
-        font-size: 26px;
+img{
+        width: 30px;
+        height: 30px;
     }
 
-    h2{
-        background-color: #ffdae3;
-        margin-top: 10px;
-        padding: 5px 10px;
-        font-weight: 500;
-        border-radius: 8px;
-    }
-
-    img{
-            width: 300px;
-            height: 380px;
-            object-fit: cover;
-            border: 0.5px solid rgba(0, 0, 0, 0.2);
-        }
-
-    .produto4{
-        grid-area: 1 / 1 / 2 / 2;
+    .div-divs{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        margin: 0 10% 0 10%;
-        padding: 20px 0;
-        border-radius: 8px;
         justify-content: center;
-        transition: 0.5s;
-    }   
-    .produto4:hover{
-        transform: scale(1.05);
-        cursor: pointer;
-    }
-
-    .produto5{
-        grid-area: 1 / 2 / 2 / 3;
-        display: flex;
-        flex-direction: column;
+        gap: 50px;
         align-items: center;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        margin: 0 10% 0 10%;
-        padding: 20px 0;
-        border-radius: 8px;
-        justify-content: center;
-        transition: 0.5s;
+        margin-top: 80px;
+        padding-bottom: 80px;
     }
 
-    .produto5:hover{
-        transform: scale(1.05);
-        cursor: pointer;
+    .div2{
+        background-color: white;
+        min-width: 250px;
+        min-height: 250px;
+        border-radius: 24px;
     }
 
-    .produto6{
-        grid-area: 1 / 3 / 2 / 4;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-        margin: 0 10% 0 10%;
-        padding: 20px 0;
-        justify-content: center;
-        border-radius: 8px;
-        transition: 0.5s;
+    .div3{
+        background-color: white;
+        min-width: 250px;
+        min-height: 250px;
+        border-radius: 24px;
+    }
+    .div4{
+        background-color: white;
+        min-width: 250px;
+        min-height: 250px;
+        border-radius: 24px;
     }
 
-    .produto6:hover{
-        transform: scale(1.05);
-        cursor: pointer;
-    }
+    .div5{
+        background-color: white;
+        min-width: 250px;
+        min-height: 250px;
+        border-radius: 24px;
+    }    
 
-    @media (max-width: 768px){
-        img{
-            width: 180px;
-            height: 260px;
-        }
-
-        h1{
-            font-size: 20px;
-        }
-
-        height: 40vh;
-
-        .produto4{
-                margin: 0 5% 0 5%;
-                padding: 20px 0;
-                border-radius: 8px;
-                
-            }
-        .produto5{
-            margin: 0 5% 0 5%;
-            padding: 20px 0;
-            border-radius: 8px;
-                
-            }
-        .produto6{
-            margin: 0 5% 0 5%;
-            padding: 20px 0;
-            border-radius: 8px;
-                
-            }
-
-    }
-
-    @media (max-width: 480px){
-
-        height: 20vh;
-
-        h1{
-
-            font-size: 16px;
-        }
-
-        h2{
-
-            margin-top: 5px;
-            padding: 5px 10px;
-            font-size: 14px;
-        }
-
-        img{
-                width: 90px;
-                height: 140px;
-
-            }
-
-        .produto4{
-           padding: 10px 0;
-
-        }   
-
-
-        .produto5{
-
-            padding: 10px 10px;
-        }
-
-        .produto5:hover{
-            transform: scale(1.05);
-            cursor: pointer;
-        }
-
-        .produto6{
-            margin: 0 10% 0 10%;
-            padding: 10px 0;
-        }
-
-    }
 
 `
 

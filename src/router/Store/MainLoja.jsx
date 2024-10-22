@@ -7,12 +7,15 @@ import Sect4Loja from "./Sect4Loja";
 export default function MainLoja(){
     return(
         <DesignLojaMain>
-            <h1 id="titulo">Loja</h1>
-            <h2 className="categorias">BONÉS</h2>
+            <div className="div-titulo">
+                <h1 id="titulo">Loja</h1>
+            </div>
+            <h2 className="categorias">Compra de Pontos</h2>
             <Sect1Loja/>
             <Sect2Loja/>
-            <h2 className="categorias">TENNIS</h2> 
+            <h2 className="categorias">Itens Colecionáveis</h2> 
             <Sect3Loja/> 
+            <h2 className="categorias">Favoritos da Galera</h2>
             <Sect4Loja/>
 
         </DesignLojaMain>
