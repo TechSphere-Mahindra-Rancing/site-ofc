@@ -5,22 +5,22 @@ export const DesignHeader = styled.header`
     background-color: #f0f0f0;
     border-bottom: 1px solid #a52a2a;
     display: grid;
-    grid-template-columns: 0.5fr 1.5fr 0.5fr;
-    grid-template-rows: 0.2fr;
+    grid-template-columns: 0.4fr 1.6fr 0.5fr;
+    min-height: 90px;
     align-items: center;
     text-align: center;
 
     .img-logo { 
-        
+        margin-left: 3em;
     }
 
     img{
-        width: 200px;
+        width: 130px;
     }
 
     nav { 
         grid-area: 1 / 2 / 2 / 3; 
-        margin-left: 7em;
+        margin-left: 4em;
     }
 
     nav ul{
@@ -36,13 +36,16 @@ export const DesignHeader = styled.header`
 
     nav a{
         text-decoration: none;
-        font-size: 20px;
-        color: #a52a2a;
+        font-size: 16px;
+        color: #001734;
         transition: 0.4s;
+        font-weight: 600;
+        transition: 0.1s;
     }
 
     nav a:hover{
-        color: #d26962;
+        color: #5D799CFF;
+        border-bottom: 2px solid #001734  ;
     }
 
     .perfil { 
@@ -51,8 +54,8 @@ export const DesignHeader = styled.header`
     }
 
     .perfil a{
-        background-color: #bb4a46;
-        padding: 23px 30px;
+        background-color: #001734;
+        padding: 15px 26px;
         border-radius: 50px;
         text-decoration: none;
         color: white;
@@ -61,7 +64,7 @@ export const DesignHeader = styled.header`
 
     .perfil a:hover{
         cursor: pointer;
-        background-color: #d26962;
+        background-color: #5D799CFF;
     }
 
     @media (max-width: 768px){
