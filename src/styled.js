@@ -69,13 +69,14 @@ export const DesignHeader = styled.header`
 
     @media (max-width: 768px){
 
+        min-height: 80px;
 
         .img-logo { 
-            padding-left: 10%;
+            padding-left: 2%;
         }
 
         img{
-            width: 150px;
+            width: 80px;
         }
 
         nav { 
@@ -89,14 +90,14 @@ export const DesignHeader = styled.header`
 
         nav a{
  
-            font-size: 14px;
+            font-size: 10px;
 
         }
 
 
         .perfil a{
 
-            padding: 15px 20px;
+            padding: 5px 15px;
 
         }
 
@@ -105,27 +106,12 @@ export const DesignHeader = styled.header`
 
     @media (max-width: 480px){
 
-            margin: 0;
-            background-color: #f0f0f0;
-            border-bottom: 1px solid #a52a2a;
-            display: grid;
-            grid-template-columns: 0.5fr 1.5fr 0.5fr;
-            grid-template-rows: 0.2fr;
-            align-items: center;
-            text-align: center;
-
-            .img-logo { 
-                
-            }
+            min-height: 60px;
 
             img{
-                width: 100px;
+                width: 80px;
             }
 
-            nav { 
-                grid-area: 1 / 2 / 2 / 3; 
-                margin-left: 7em;
-            }
 
             nav ul{
                 display: flex;
@@ -143,7 +129,7 @@ export const DesignHeader = styled.header`
 
 
             .perfil a{
-                padding: 15px 20px;
+                padding: 4px 15px;
                 border-radius: 50px;
 
             }

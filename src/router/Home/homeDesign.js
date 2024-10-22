@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const DesignHome = styled.main`
+
+    background-color: linear-gradient(#bb3737, #003e8e);
+
     h1{
         color: #b32b39;
     }
@@ -101,7 +104,7 @@ export const DesingSect1Home = styled.section`
 `
 
 export const DesingSect2Home = styled.section`
-    
+    background-color: linear-gradient(#bb3737, #003e8e);
     display: flex;    
     width: 100%;
     height: 80vh;
