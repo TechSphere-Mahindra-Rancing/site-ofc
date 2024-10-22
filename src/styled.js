@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const DesignHeader = styled.header`
     margin: 0;
     background-color: #f0f0f0;
-    border-bottom: 1px solid #a52a2a;
+    border-bottom: 1px solid #001734;
     display: grid;
     grid-template-columns: 0.4fr 1.6fr 0.5fr;
     min-height: 90px;

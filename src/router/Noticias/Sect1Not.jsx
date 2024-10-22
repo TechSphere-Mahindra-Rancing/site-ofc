@@ -17,7 +17,7 @@ export default function Sect1Noticias() {
 
     return (
         <DesignSect1Noticias>
-            <div className="not1">
+            {/* <div className="not1">
                 <img 
                     src={FotoNoticia1} 
                     alt="foto de um carro de formula e da mahindra" 
@@ -55,7 +55,16 @@ export default function Sect1Noticias() {
                         <p>A Fórmula E promove a sustentabilidade com corridas de carros elétricos.</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
+
+            <div className="not1"></div>
+            <div className="not2"></div>
+            <div className="not3"></div>
+            <div className="not4"></div>
+            <div className="not5"></div>
+            <div className="not6"></div>
+            <div className="not7"></div>
+            <div className="not8"></div>
         </DesignSect1Noticias>
     );
 }
