@@ -24,121 +24,114 @@ export default function MainSobre(){
                 </div>
             </section>
 
-            <section>
-                <div>
+            <section className="div-valores">
+                <div className="nossa-missao">
                     <h2>Nossa Missão</h2>
-                    <ul>
-                        <li>Inovar continuamente</li>
-                        <li>Criar impacto positivo</li>
-                        <li>Focar na experiência do usuário:</li>
-                        <li>Entregar soluções personalizadas</li>
-                        <li>Aprimorar processos ágeis:</li>
-                    </ul>
+                    <hr />
+                    <div className="lista">
+                        <ul>
+                            <li>Inovar continuamente</li>
+                            <li>Criar impacto positivo</li>
+                            <li>Focar na experiência do usuário:</li>
+                            <li>Entregar soluções personalizadas</li>
+                            <li>Aprimorar processos ágeis</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div>
+                <div className="nossa-missao">
                     <h2>Nossos Valores</h2>
-                    <ul>
-                        <li>Inovação</li>
-                        <li>Colaboração</li>
-                        <li>Excelência</li>
-                        <li>Transparência</li>
-                        <li>Comprometimento</li>
-                    </ul>
+                    <hr />
+                    <div className="lista">
+                        <ul>
+                            <li>Inovação</li>
+                            <li>Colaboração</li>
+                            <li>Excelência</li>
+                            <li>Transparência</li>
+                            <li>Comprometimento</li>
+                        </ul>
+                    </div>   
                 </div>
             </section>
 
-            <section>
-                <h3>Transformando Ideias em Soluções Digitais Inovadoras</h3>
-                <h4>Na TechSphere, utilizamos a tecnologia para impulsionar a inovação, desenvolvendo plataformas digitais que conectam pessoas e resolvem problemas reais. Nosso compromisso é criar experiências impactantes, unindo excelência técnica e colaboração para entregar soluções personalizadas e de alta qualidade.</h4>
+            <section className="frase-impactante">
+ 
+                    <h3>Transformando Ideias em Soluções Digitais Inovadoras</h3>
+                    <h4>Na TechSphere, utilizamos a tecnologia para impulsionar a inovação, desenvolvendo plataformas digitais que conectam pessoas e resolvem problemas reais. Nosso compromisso é criar experiências impactantes, unindo excelência técnica e colaboração para entregar soluções personalizadas e de alta qualidade.</h4>
+ 
             </section>
 
-            <section>
+            <section className="equipe">
                 <h2>Nossa Equipe</h2>
-                
+                <hr />
                 {/* Thiago */}
-                <div>
-                    <div>
+                <div className="primeira">
+                    <div className="foto">
                         <img src="#" alt="thiago" />
                     </div>
 
-                    <div>
+                    <div className="paragrafo">
                         <p><span className="negrito">Responsabilidade: </span>Thiago lidera o projeto Formula Hub como Product Owner, sendo responsável por definir as prioridades, alinhar a visão do produto com os objetivos estratégicos e garantir que o desenvolvimento esteja sempre focado em entregar valor. Além disso, ele é o responsável pela arquitetura e implementação do Back-End, cuidando da eficiência, segurança e escalabilidade do sistema, incluindo servidores, banco de dados e APIs.</p>
 
                         <p><span className="negrito">Estilo de trabalho: </span>Focado e orientado a resultados, Thiago é um líder organizado que mantém uma comunicação constante com sua equipe, facilitando o progresso e a resolução de problemas. Sua abordagem técnica é detalhista e eficiente, sempre buscando soluções robustas que garantam a estabilidade do projeto. Ele equilibra bem suas funções, assegurando que tanto a visão estratégica quanto a execução técnica estejam alinhadas.</p>
 
-                        <div>
-                            <button>Ver mais</button>
-                        </div>
                     </div>
                 </div>
                 
                 {/* João */}
-                <div>
-                    <div>
+                <div className="segunda">
+                    <div className="foto">
                         <img src="#" alt="joão" />
                     </div>
 
-                    <div>
+                    <div className="paragrafo">
                         <p><span className="negrito">Responsabilidade: </span>João Victor é o Scrum Master do projeto, responsável por coordenar as cerimônias ágeis e garantir que a equipe siga os princípios do Scrum. Ele facilita a comunicação entre os membros da equipe e remove qualquer obstáculo que possa impedir o progresso.</p>
 
                         <p><span className="negrito">Estilo de trabalho: </span>João é organizado e comunicativo, sempre buscando melhorar os processos de trabalho e garantir que o time esteja em sintonia. Ele valoriza o desenvolvimento contínuo da equipe e é peça-chave na resolução de problemas do dia a dia.</p>
 
-                        <div>
-                            <button>Ver mais</button>
-                        </div>
                     </div>
                 </div>
 
                 {/* Maria */}
-                <div>
-                    <div>
+                <div className="primeira">
+                    <div className="foto">
                         <img src="#" alt="maria" />
                     </div>
 
-                    <div>
+                    <div className="paragrafo">
                         <p><span className="negrito">Responsabilidade: </span> Maria Alice lidera a equipe de Front-End, cuidando de toda a interface visual e da experiência do usuário. Ela é responsável por garantir que o design e a usabilidade estejam de acordo com os padrões de qualidade definidos.</p>
 
                         <p><span className="negrito">Estilo de trabalho: </span> Detalhista e criativa, Maria Alice se concentra em entregar um produto esteticamente agradável e funcional. Ela trabalha em estreita colaboração com os desenvolvedores de back-end e o Product Owner para garantir que o Front-End atenda às expectativas de performance e design.</p>
 
-                        <div>
-                            <button>Ver mais</button>
-                        </div>
+                        
                     </div>
                 </div>
 
                 {/* Ianny */}
-                <div>
-                    <div>
+                <div className="segunda">
+                    <div className="foto">
                         <img src="#" alt="ianny" />
                     </div>
 
-                    <div>
+                    <div className="paragrafo">
                         <p><span className="negrito">Responsabilidade: </span>Ianny colabora diretamente com Maria Alice, ajudando na implementação das interfaces e nas melhorias de usabilidade. Ela é parte integrante do desenvolvimento visual e da implementação de funcionalidades.</p>
 
                         <p><span className="negrito">Estilo de trabalho: </span>Colaborativa e prática, Ianny costuma contribuir com soluções ágeis e focadas em melhorar a experiência do usuário. Ela se destaca por sua habilidade em resolver problemas rapidamente e sugerir ajustes necessários durante o processo de desenvolvimento.</p>
 
-                        <div>
-                            <button>Ver mais</button>
-                        </div>
                     </div>
                 </div>
 
                 {/* Jean */}
-                <div>
-                    <div>
+                <div className="primeira">
+                    <div className="foto">
                         <img src="#" alt="jean" />
                     </div>
 
-                    <div>
+                    <div className="paragrafo">
                         <p><span className="negrito">Responsabilidade: </span>Assim como Ianny, Jean apoia Maria Alice no desenvolvimento da interface. Ele cuida da implementação de componentes e na integração de novas funcionalidades para garantir uma experiência fluida e dinâmica para os usuários.</p>
 
                         <p><span className="negrito">Estilo de trabalho: </span>Jean é metódico e atento aos detalhes, com foco na qualidade do código e na eficiência das interações entre usuário e sistema. Ele busca sempre implementar soluções técnicas que atendam às necessidades da interface sem comprometer a performance.
 </p>
-
-                        <div>
-                            <button>Ver mais</button>
-                        </div>
                     </div>
                 </div>
 
