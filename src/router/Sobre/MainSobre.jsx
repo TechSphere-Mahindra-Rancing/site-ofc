@@ -5,13 +5,16 @@ export default function MainSobre(){
     return(
         <DesingMainSobre>
             <section id="banner">
-                <img src="#" alt="image" />
+                <div className="imagem-inicial">
+                     <img src="#" alt="image" />
+                </div>
             </section>
 
-            <section>
+            <section className="primeira-section">
                 <h1>Sobre Nós</h1>
+                <hr />
                 <h3>Sobre a TechSphere e a Jornada até o Formula Hub</h3>
-                <div>
+                <div className="primeiro-paragrafo">
                     <p>A TechSphere é uma empresa de tecnologia fundada com a missão de transformar ideias inovadoras em soluções digitais impactantes. Desde o início, nossa visão foi clara: usar a tecnologia para criar experiências interativas que não apenas resolvem problemas, mas também elevam a forma como as pessoas interagem com o mundo digital. Com uma equipe diversificada de desenvolvedores, designers e estrategistas de produto, nos especializamos em entregar plataformas que unem inovação e funcionalidade, sempre focadas em oferecer valor real aos usuários.</p>
 
                     <p>Nosso primeiro grande projeto, o Formula Hub, foi o resultado de nossa paixão compartilhada por tecnologia sustentável e esportes. Quando nos deparamos com o desafio de ajudar a popularizar a Fórmula E no Brasil, vimos a oportunidade perfeita para aplicar nossa expertise em desenvolvimento de plataformas digitais e criar algo totalmente novo. O Formula Hub nasceu como uma plataforma gamificada, onde fãs de automobilismo elétrico podem se engajar em desafios, aprender sobre o esporte e apostar em seus pilotos favoritos, tudo enquanto promovemos o conceito de corridas sustentáveis.</p>
