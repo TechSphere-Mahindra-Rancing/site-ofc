@@ -77,9 +77,9 @@ const Inicio =()=>{
 
             <section id="content-section">
                 <div>
-                    <h1>FRASE IMPACTANTE</h1>
-                    <h3>Lorem ipsum dolor sit amet. Et ratione possimus est rerum</h3>
-                    <p>Lorem ipsum dolor sit amet. Et ratione possimus est rerum voluptas quo explicabo consequatur. Lorem ipsum dolor sit amet. Et ratione possimus est rerum voluptas quo explicabo consequatur. Lorem ipsum dolor sit amet. Et ratione possimus est rerum voluptas quo explicabo consequatur. Lorem ipsum dolor sit amet. Et ratione possimus est rerum voluptas quo explicabo consequatur.</p>
+                    <h1>Aposte na inovação e acelere sua paixão pela Fórmula E!</h1>
+                    <h3>Descubra um mundo interativo onde fãs se conectam, aprendem e competem em um ambiente gamificado.</h3>
+                    <p>O Formula Hub é uma plataforma inovadora criada para conectar entusiastas da Fórmula E e promover o automobilismo elétrico no Brasil. Por meio de desafios, quizzes e um jogo de apostas, oferecemos aos usuários a oportunidade de se engajar de forma divertida e competitiva. Aqui, você pode não apenas acompanhar as corridas, mas também participar ativamente, acumulando pontos e trocando por prêmios enquanto se torna um expert em sustentabilidade e automobilismo elétrico. Venha fazer parte dessa revolução nas corridas e viva a emoção da Fórmula E como nunca antes!</p>
 
                     {/* Demonstrações do site */}
                     <div>
@@ -112,8 +112,8 @@ const Inicio =()=>{
                 </div>
 
                 <div>
-                    <h2>Lorem ipsum dolor sit amet. Et ratione possimus est rerum</h2>
-                    <p>Lorem ipsum dolor sit amet. Et ratione possimus est rerum voluptas quo explicabo consequatur. Lorem ipsum dolor sit amet. Et ratione possimus est rerum voluptas quo explicabo consequatur.</p>
+                    <h3>No Formula Hub, cada corrida é uma nova oportunidade de se engajar, competir e celebrar o futuro das corridas elétricas!</h3>
+                    <p>Desperte seu espírito competitivo e viva a adrenalina das corridas elétricas em cada corrida!</p>
                 </div>
 
                 <div>
@@ -134,7 +134,7 @@ const Inicio =()=>{
                 </div>
 
                 <div>
-                    <h2>FRASE IMPACTO</h2>
+                    <h3>Junte-se à comunidade e transforme sua paixão por automobilismo em uma experiência interativa e emocionante!</h3>
                     <div>
                         <button>Participe Agora</button>
                     </div>
@@ -144,7 +144,7 @@ const Inicio =()=>{
             <section>
                 <h1>Avaliações</h1>
                 <div>
-
+                    
                 </div>
             </section>
         </>
