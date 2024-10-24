@@ -125,9 +125,10 @@ const Inicio =()=>{
 
             <section>
                 <h1>Funcionalidades do Site</h1>
-                <p>Lorem ipsum dolor sit amet. Et ratione possimus est rerum voluptas quo explicabo consequatur. Lorem ipsum dolor sit amet. Et ratione possimus est rerum voluptas quo explicabo consequatur.</p>
+                <p>O Formula Hub oferece uma experiência rica e interativa, com funcionalidades que se destacam pela inovação e engajamento. Entre os principais recursos, estão:</p>
 
                 <div>
+                    {/* Colocar imagem e um icone de clique para abrir um modal */}
                     <div>Loja de Pontos</div>
                     <div>E-GOAT</div>
                     <div>E-Talk</div>
@@ -139,12 +140,14 @@ const Inicio =()=>{
                         <button>Participe Agora</button>
                     </div>
                 </div>
+
+                <hr className="linha-divisoria"/>
             </section>
 
             <section>
                 <h1>Avaliações</h1>
                 <div>
-                    
+
                 </div>
             </section>
         </>
