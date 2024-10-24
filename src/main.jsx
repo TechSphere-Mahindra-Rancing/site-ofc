@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import EstiloGlobal from './globalStyled';
 import MainHome from './router/Home/MainHome.jsx';
+import Inicio from './router/Inicio/index.jsx';
 import Error from './router/Error.jsx';
 import MainNoticias from './router/Noticias/MainNoticias.jsx';
 import MainLoja from './router/Store/MainLoja.jsx';
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
     element: <App />, 
     errorElement: <Error />,
     children: [
-      { path:'/', element: <MainHome /> },
+      { path:'/', element: <Inicio /> },
       { path:'noticias', element: <MainNoticias/> },
       { path:'store', element: <MainLoja/> },
       { path:'corridas', element: <MainCorridas/>},
