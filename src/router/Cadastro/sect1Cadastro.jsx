@@ -21,7 +21,7 @@ export default function Sect1Cadastro() {
                             <input type="date" id="data-input" placeholder="Nascimento" />
                             <input type="text" id="usuario-input" placeholder="Usuário" />
                         </form>
-                        <form>
+                        <form className="email-senha">
                             <input type="email" id="email-input" placeholder="E-mail"/>
                             <input type="password" id="senha-input" placeholder="Senha" />
                             <input type="password" id="senha2-input" placeholder="Confimação Senha" />
