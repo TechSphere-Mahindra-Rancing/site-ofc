@@ -103,6 +103,7 @@ export const DesingMainSobre = styled.main`
     }
 
     .equipe h2{
+        text-align: start;
         margin-left: 150px;
 
     }
@@ -114,13 +115,21 @@ export const DesingMainSobre = styled.main`
     }
 
     .primeira{
+        width: fit-content;
+        height: fit-content;
         display: flex;
         gap: 20px;
         padding: 0 150px;
         align-items: center;
     }
 
+    .btn-ver-mais {
+        text-align: end;
+    }
+
     .segunda{
+        width: fit-content;
+        height: fit-content;
         display: flex;
         flex-direction: row-reverse;
         gap: 20px;
@@ -140,7 +149,7 @@ export const DesingMainSobre = styled.main`
         font-size: 14px;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 24px;
-        height: 200px;
+        height: fit-content;
         padding: 20px 20px;
     }
 
@@ -151,5 +160,31 @@ export const DesingMainSobre = styled.main`
     .paragrafo p{
         margin: 10px 0;
     }
+
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+
+        .modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+
+        color: black;
+    }
+
 
 `
