@@ -269,8 +269,9 @@ export const LoginStyled = styled.main`
             left: 60%;
             width: 40%;
         }
-    }
 
+    }
+    
     @keyframes slideout {
         
         from {
@@ -298,4 +299,145 @@ export const LoginStyled = styled.main`
             width: 40%;
         }
     }
+
+    @media (max-width: 500px){
+        
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(90deg, #BB3737 0%, #003E8E 100%);
+        }
+
+        .content {
+            position: absolute;
+            width: 90%;
+            height: fit-content;
+        }
+
+        .content::before {
+            content: "";
+            width: 100%; /* Agora a largura ocupa 100% */
+            height: 40%; /* A altura inicial é 40% */
+        }
+
+        .first-content, .second-content {
+            flex-direction: column;
+        }
+    
+        .first-column, .second-column {
+            padding: 16px;
+        }
+    
+        .title{
+            font-size: 20px;
+        }
+    
+        .description {
+            font-size: 14px;
+        }
+    
+        .diviser, .diviser-rigth {
+            margin: 10px 0 10px;
+        }
+     
+        .btn {
+            width: 40%;
+            margin: 0 auto;
+            padding: 6px 12px;
+            margin: 25px 0;
+            border-radius: 12px;
+        }
+    
+        .form {
+            gap: 16px;
+        }
+    
+        .form-title{
+            font-size: 20px;
+            padding-bottom: 12px;
+        }
+    
+        .input-container {
+            width: 100%;
+            max-height: 30px;
+            border-radius: 12px;
+        }
+    
+        .input-container .icon {
+            top: 65%;
+        }
+    
+        .form .btn{
+            margin: 20px 0;
+            background: #BB3737;
+            font-size: 12px;
+            border: none;
+        }
+
+
+        /* Animação - Deslocamento Vertical */
+        @keyframes slidein {
+            from {
+                left: auto;
+                top: 0;
+                height: 40%; /* Altura inicial é 40% */
+            }
+
+            25% {
+                left: auto;
+                top: 5%;
+                height: 50%; /* Aumenta para 50% */
+            }
+
+            50% {
+                left: auto;
+                top: 25%;
+                height: 60%; /* Aumenta para 60% */
+            }
+
+            75% {
+                leff: auto;
+                top: 45%;
+                height: 50%; /* Retorna para 50% */
+            }
+
+            to {
+                left: auto;
+                top: 60%; /* Para no final da animação */
+                height: 40%; /* Retorna para 40% */
+            }
+        }
+
+        @keyframes slideout {
+            from {
+                top: 60%; /* Começa na parte inferior */
+                height: 40%; /* Altura inicial é 40% */
+            }
+
+            25% {
+                top: 45%; /* Sobe um pouco */
+                height: 50%; /* Aumenta para 50% */
+            }
+
+            50% {
+                top: 25%; /* Continua subindo */
+                height: 60%; /* Aumenta para 60% */
+            }
+
+            75% {
+                top: 5%; /* Quase no topo */
+                height: 50%; /* Retorna para 50% */
+            }
+
+            to {
+                top: 0%; /* Para no topo */
+                height: 40%; /* Retorna para 40% */
+            }
+        }
+    }
+    
 `
