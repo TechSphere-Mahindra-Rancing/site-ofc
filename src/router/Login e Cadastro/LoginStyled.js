@@ -276,15 +276,16 @@ export const LoginStyled = styled.main`
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: none;
             position: relative;
             background: linear-gradient(90deg, #BB3737 0%, #003E8E 100%);
         }
 
         .content {
             position: absolute;
-            width: 90%;
-            height: 95%;
+            width: 95%;
+            min-height: 95%;
+            justify-content: center;
             align-items: center;
         }
 
@@ -295,21 +296,16 @@ export const LoginStyled = styled.main`
         }
 
         .first-content, .second-content {
-            align-items: center;
-            justify-content: center;
             flex-direction: column;
-        }
-
-        .first-content{
-            padding-top: 24px;
-        }
-
-        .second-content{
-            padding: 24px 0;
         }
     
         .first-column, .second-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             padding: 16px;
+            flex: 0 0 50%;
         }
     
         .title{
@@ -367,7 +363,7 @@ export const LoginStyled = styled.main`
 
         @keyframes slideout {
             from { top: 50%; height: 50%; }
-            to { top: 0; height: 45%; }
+            to { top: 0; height: 50%; }
         }
     }
     
