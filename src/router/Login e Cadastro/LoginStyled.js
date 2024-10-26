@@ -159,6 +159,18 @@ export const LoginStyled = styled.main`
         z-index: -1;
     }
 
+    .error-msg {
+    color: #BB3737;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 8px 0;
+    padding: 4px;
+    background-color: #fff;
+    border: 2px solid #BB3737;
+    border-radius: 4px;
+    text-align: center;
+}
+
 
     /* TRANSIÇÃO */
     .sign-in-js .first-content .first-column,
