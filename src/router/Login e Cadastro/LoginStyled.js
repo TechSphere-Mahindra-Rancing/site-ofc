@@ -116,13 +116,31 @@ export const LoginStyled = styled.main`
     .form input{
         background: rgba(255, 255, 255, 0.5);
         border: none;
-        width: 50%;
-        height: 50px;
-        border-radius: 24px;
-        padding: 14px;
         color: #585858;
         font-weight: 600;
     }
+
+    .input-container {
+        position: relative;
+        width: 50%;
+        border-radius: 24px;
+    }
+
+    .input-container input {
+        width: 100%;
+        padding: 10px 10px 10px 30px;
+        border-radius: 24px;
+        border: 1px solid #ccc;
+    }
+
+    .input-container .icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: #888; /* Cor do ícone */
+    }
+
 
     .form .btn{
         margin: 0 0 50px 0;
@@ -160,17 +178,16 @@ export const LoginStyled = styled.main`
     }
 
     .error-msg {
-    color: #BB3737;
-    font-size: 14px;
-    font-weight: 600;
-    margin: 8px 0;
-    padding: 4px;
-    background-color: #fff;
-    border: 2px solid #BB3737;
-    border-radius: 4px;
-    text-align: center;
-}
-
+        color: #BB3737;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 8px 0;
+        padding: 4px;
+        background-color: #fff;
+        border: 2px solid #BB3737;
+        border-radius: 4px;
+        text-align: center;
+    }
 
     /* TRANSIÇÃO */
     .sign-in-js .first-content .first-column,

@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { LoginStyled } from "./LoginStyled";
 
+import { FaUser } from "react-icons/fa";
+import { RiLockPasswordFill } from "react-icons/ri";
+import { MdEmail } from "react-icons/md";
+
 export default function Login() {
     const [containerClass, setContainerClass] = useState("");
     const [usuarios, setUsuarios] = useState([]);
@@ -88,30 +92,43 @@ export default function Login() {
                     <div className="second-column">
                         <h2 className="form-title">Criar Conta</h2>
                         <form className="form" onSubmit={handleSignUpSubmit}>
-                            <input
-                                type="text"
-                                name="usuario"
-                                placeholder="Usuário"
-                                value={signUpData.usuario}
-                                onChange={handleSignUpChange}
-                                required
-                            />
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Email"
-                                value={signUpData.email}
-                                onChange={handleSignUpChange}
-                                required
-                            />
-                            <input
-                                type="password"
-                                name="senha"
-                                placeholder="Senha"
-                                value={signUpData.senha}
-                                onChange={handleSignUpChange}
-                                required
-                            />
+                            <div className="input-container">
+                                <FaUser className="icon"/>
+                                <input
+                                    type="text"
+                                    name="usuario"
+                                    placeholder="Usuário"
+                                    value={signUpData.usuario}
+                                    onChange={handleSignUpChange}
+                                    required
+                                />
+                            </div>
+
+                            <div className="input-container">
+                                <MdEmail className="icon" />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email"
+                                    value={signUpData.email}
+                                    onChange={handleSignUpChange}
+                                    required
+                                />
+                            </div>
+
+
+                            <div className="input-container">
+                                <RiLockPasswordFill className="icon"/>
+                                <input
+                                    type="password"
+                                    name="senha"
+                                    placeholder="Senha"
+                                    value={signUpData.senha}
+                                    onChange={handleSignUpChange}
+                                    required
+                                />
+                            </div>
+
                             {errorMsg && <p className="error-msg">{errorMsg}</p>} {/* Mensagem de erro */}
                             <button className="btn" type="submit">Criar</button>
                         </form>
@@ -122,22 +139,30 @@ export default function Login() {
                     <div className="second-column">
                         <h2 className="form-title">Faça o seu Login</h2>
                         <form className="form" onSubmit={handleLoginSubmit}>
-                            <input
-                                type="text"
-                                name="usuario"
-                                placeholder="Usuário"
-                                value={loginData.usuario}
-                                onChange={handleLoginChange}
-                                required
-                            />
-                            <input
-                                type="password"
-                                name="senha"
-                                placeholder="Senha"
-                                value={loginData.senha}
-                                onChange={handleLoginChange}
-                                required
-                            />
+                            <div className="input-container">
+                                <FaUser className="icon"/>
+                                <input
+                                    type="text"
+                                    name="usuario"
+                                    placeholder="Usuário"
+                                    value={loginData.usuario}
+                                    onChange={handleLoginChange}
+                                    required
+                                />
+                            </div>
+
+                            <div className="input-container">
+                                <RiLockPasswordFill className="icon"/>
+                                <input
+                                    type="password"
+                                    name="senha"
+                                    placeholder="Senha"
+                                    value={loginData.senha}
+                                    onChange={handleLoginChange}
+                                    required
+                                />
+                            </div>
+
                             {errorMsg && <p className="error-msg">{errorMsg}</p>} {/* Mensagem de erro */}
                             <button className="btn" type="submit">Entrar</button>
                         </form>
