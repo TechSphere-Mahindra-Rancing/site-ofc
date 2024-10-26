@@ -94,6 +94,7 @@ export default function Login() {
                                 placeholder="Usuário"
                                 value={signUpData.usuario}
                                 onChange={handleSignUpChange}
+                                required
                             />
                             <input
                                 type="email"
@@ -101,6 +102,7 @@ export default function Login() {
                                 placeholder="Email"
                                 value={signUpData.email}
                                 onChange={handleSignUpChange}
+                                required
                             />
                             <input
                                 type="password"
@@ -108,6 +110,7 @@ export default function Login() {
                                 placeholder="Senha"
                                 value={signUpData.senha}
                                 onChange={handleSignUpChange}
+                                required
                             />
                             {errorMsg && <p className="error-msg">{errorMsg}</p>} {/* Mensagem de erro */}
                             <button className="btn" type="submit">Criar</button>
@@ -125,6 +128,7 @@ export default function Login() {
                                 placeholder="Usuário"
                                 value={loginData.usuario}
                                 onChange={handleLoginChange}
+                                required
                             />
                             <input
                                 type="password"
@@ -132,6 +136,7 @@ export default function Login() {
                                 placeholder="Senha"
                                 value={loginData.senha}
                                 onChange={handleLoginChange}
+                                required
                             />
                             {errorMsg && <p className="error-msg">{errorMsg}</p>} {/* Mensagem de erro */}
                             <button className="btn" type="submit">Entrar</button>
