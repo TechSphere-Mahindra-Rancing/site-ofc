@@ -7,8 +7,8 @@ export const LoginStyled = styled.main`
         display: flex;
         justify-content: center;
         align-items: center;
-
         background: linear-gradient(90deg, #BB3737 0%, #003E8E 100%);
+        transition: background 0.5s ease; /* Transição para o background */
     }
 
     .content {
@@ -19,6 +19,8 @@ export const LoginStyled = styled.main`
         align-items: center;
         background-color: rgba(255, 255, 255, 0.1);
         position: relative;
+        transition: background-color 0.5s ease; /* Transição de cor do fundo */
+
     }
 
     .content::before{
@@ -27,6 +29,8 @@ export const LoginStyled = styled.main`
         background-color: #fff;
         width: 40%;
         height: 100%;
+        transition: width 0.5s ease, left 0.5s ease; /* Transições no width e left */
+
     }
 
     .first-content {
@@ -90,7 +94,7 @@ export const LoginStyled = styled.main`
         font-weight: 600;
         border: none;
         border-radius: 20px;
-        transition: 1s;
+        transition: background 0.5s ease, color 0.5s ease; /* Transições de background e cor */
         cursor: pointer;
     }
 
@@ -146,6 +150,7 @@ export const LoginStyled = styled.main`
         margin: 0 0 50px 0;
         background: #BB3737;
         border: none;
+        transition: background 0.5s ease, color 0.5s ease; /* Transições no botão de form */
     }
 
     .form .btn:hover{
@@ -156,6 +161,7 @@ export const LoginStyled = styled.main`
     .form a{
         font-size: 12px;
         color: rgba(255, 255, 255, 0.5);
+        transition: color 0.3s ease; /* Transição suave para links */
     }
 
     .form a:hover{
@@ -205,13 +211,12 @@ export const LoginStyled = styled.main`
 
     .sign-in-js .content::before{
         left: 60%;
-        animation: slidein 3s;
-
+        animation: slidein 0.5s ease forwards;
         z-index: 12;
     }
 
     .sign-up-js .content::before{
-        animation: slideout 3s;
+        animation: slideout 0.5s ease forwards;
         z-index: 12;
     }
 
@@ -244,69 +249,33 @@ export const LoginStyled = styled.main`
 
     /* Animação - Deslocamento */
     @keyframes slidein {
-        
         from {
             left: 0;
             width: 40%;
         }
-
-        25% {
-            left: 5%;
-            width: 50%;
-        }
-
-        50% {
-            left: 25%;
-            width: 60%;
-        }
-
-        75% {
-            left: 45%;
-            width: 50%;
-        }
-
         to {
             left: 60%;
             width: 40%;
         }
-
     }
-    
+
     @keyframes slideout {
-        
         from {
             left: 60%;
             width: 40%;
         }
-
-        25% {
-            left: 45%;
-            width: 50%;
-        }
-
-        50% {
-            left: 25%;
-            width: 60%;
-        }
-
-        75% {
-            left: 5%;
-            width: 50%;
-        }
-
         to {
             left: 0%;
             width: 40%;
         }
     }
 
-    @media (max-width: 500px){
+    @media (max-width: 750px){
         
         .container {
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             position: relative;
             background: linear-gradient(90deg, #BB3737 0%, #003E8E 100%);
@@ -315,17 +284,28 @@ export const LoginStyled = styled.main`
         .content {
             position: absolute;
             width: 90%;
-            height: fit-content;
+            height: 95%;
+            align-items: center;
         }
 
         .content::before {
-            content: "";
-            width: 100%; /* Agora a largura ocupa 100% */
-            height: 40%; /* A altura inicial é 40% */
+            width: 100%;
+            height: 50%;
+            animation: slidein 0.5s ease forwards;
         }
 
         .first-content, .second-content {
+            align-items: center;
+            justify-content: center;
             flex-direction: column;
+        }
+
+        .first-content{
+            padding-top: 24px;
+        }
+
+        .second-content{
+            padding: 24px 0;
         }
     
         .first-column, .second-column {
@@ -368,7 +348,7 @@ export const LoginStyled = styled.main`
         }
     
         .input-container .icon {
-            top: 65%;
+            top: 50%;
         }
     
         .form .btn{
@@ -381,62 +361,13 @@ export const LoginStyled = styled.main`
 
         /* Animação - Deslocamento Vertical */
         @keyframes slidein {
-            from {
-                left: auto;
-                top: 0;
-                height: 40%; /* Altura inicial é 40% */
-            }
-
-            25% {
-                left: auto;
-                top: 5%;
-                height: 50%; /* Aumenta para 50% */
-            }
-
-            50% {
-                left: auto;
-                top: 25%;
-                height: 60%; /* Aumenta para 60% */
-            }
-
-            75% {
-                leff: auto;
-                top: 45%;
-                height: 50%; /* Retorna para 50% */
-            }
-
-            to {
-                left: auto;
-                top: 60%; /* Para no final da animação */
-                height: 40%; /* Retorna para 40% */
-            }
+            from { left: 0%; top: 0; height: 50%; }
+            to { left: 0%; top: 50%; height: 50%; }
         }
 
         @keyframes slideout {
-            from {
-                top: 60%; /* Começa na parte inferior */
-                height: 40%; /* Altura inicial é 40% */
-            }
-
-            25% {
-                top: 45%; /* Sobe um pouco */
-                height: 50%; /* Aumenta para 50% */
-            }
-
-            50% {
-                top: 25%; /* Continua subindo */
-                height: 60%; /* Aumenta para 60% */
-            }
-
-            75% {
-                top: 5%; /* Quase no topo */
-                height: 50%; /* Retorna para 50% */
-            }
-
-            to {
-                top: 0%; /* Para no topo */
-                height: 40%; /* Retorna para 40% */
-            }
+            from { top: 50%; height: 50%; }
+            to { top: 0; height: 45%; }
         }
     }
     

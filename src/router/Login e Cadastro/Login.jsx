@@ -11,7 +11,7 @@ export default function Login() {
     const [usuarios, setUsuarios] = useState([]);
     const [signUpData, setSignUpData] = useState({ usuario: '', senha: '', email: '' });
     const [loginData, setLoginData] = useState({ usuario: '', senha: '' });
-    const [errorMsg, setErrorMsg] = useState(''); // Estado para mensagens de erro
+    const [errorMsg, setErrorMsg] = useState('');
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -20,13 +20,13 @@ export default function Login() {
             .then((data) => setUsuarios(data));
     }, []);
 
+    // Alterna entre as classes de sign-in e sign-up
     const handleSignIn = () => setContainerClass("sign-in-js");
     const handleSignUp = () => setContainerClass("sign-up-js");
 
     const handleSignUpSubmit = (e) => {
         e.preventDefault();
 
-        // Verifica unicidade do usuário e email
         const userExists = usuarios.some((u) => u.usuario === signUpData.usuario);
         const emailExists = usuarios.some((u) => u.email === signUpData.email);
 
@@ -47,7 +47,7 @@ export default function Login() {
             body: JSON.stringify(signUpData),
         }).then(() => {
             alert("Usuário cadastrado com sucesso!");
-            setErrorMsg(''); // Limpa a mensagem de erro após cadastro bem-sucedido
+            setErrorMsg('');
             setContainerClass("sign-in-js");
         });
     };
@@ -116,7 +116,6 @@ export default function Login() {
                                 />
                             </div>
 
-
                             <div className="input-container">
                                 <RiLockPasswordFill className="icon"/>
                                 <input
@@ -129,7 +128,7 @@ export default function Login() {
                                 />
                             </div>
 
-                            {errorMsg && <p className="error-msg">{errorMsg}</p>} {/* Mensagem de erro */}
+                            {errorMsg && <p className="error-msg">{errorMsg}</p>}
                             <button className="btn" type="submit">Criar</button>
                         </form>
                     </div>
@@ -163,7 +162,7 @@ export default function Login() {
                                 />
                             </div>
 
-                            {errorMsg && <p className="error-msg">{errorMsg}</p>} {/* Mensagem de erro */}
+                            {errorMsg && <p className="error-msg">{errorMsg}</p>}
                             <button className="btn" type="submit">Entrar</button>
                         </form>
                     </div>
