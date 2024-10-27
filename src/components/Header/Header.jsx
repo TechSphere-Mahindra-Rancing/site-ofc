@@ -11,6 +11,10 @@ export default function Header(){
         navRef.current.classList.toggle("responsive_nav");
     }
 
+    const hideNavBar =()=>{
+        navRef.current.classList.remove("responsive_nav")
+    }
+
     return(
         <StyledHeader>
             <div>
@@ -20,13 +24,13 @@ export default function Header(){
                 <div id="logo">
                     <h1>LOGO</h1>
                 </div>
-                <Link to="/">Início</Link>
-                <Link to="/noticias">Notícias</Link>
-                <Link to="/corridas">Corridas</Link>
-                <Link to="/store">Loja</Link>
-                <Link to="/dashboard">Dashborad</Link>
-                <Link to="/sobre">Sobre Nós</Link>
-                <Link to="/cadastro" className="icon-perfil" id="login">
+                <Link to="/" onClick={hideNavBar}>Início</Link>
+                <Link to="/noticias" onClick={hideNavBar}>Notícias</Link>
+                <Link to="/corridas" onClick={hideNavBar}>Corridas</Link>
+                <Link to="/store" onClick={hideNavBar}>Loja</Link>
+                <Link to="/dashboard" onClick={hideNavBar}>Dashborad</Link>
+                <Link to="/sobre" onClick={hideNavBar}>Sobre Nós</Link>
+                <Link to="/cadastro" className="icon-perfil" id="login" onClick={hideNavBar}>
                     <FaUser />
                 </Link>
                 <button className="nav-btn  nav-close-btn" onClick={showNavBar}>

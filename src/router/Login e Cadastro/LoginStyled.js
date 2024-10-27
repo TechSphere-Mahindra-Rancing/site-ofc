@@ -275,6 +275,7 @@ export const LoginStyled = styled.main`
     @media (max-width: 750px){
         
         .container {
+            padding: 0 0 70px;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -286,7 +287,7 @@ export const LoginStyled = styled.main`
         .content {
             position: absolute;
             width: 95%;
-            min-height: 95%;
+            min-height: 50%;
             justify-content: center;
             align-items: center;
         }
@@ -294,7 +295,7 @@ export const LoginStyled = styled.main`
         .content::before {
             width: 100%;
             height: 50%;
-            animation: slidein 0.5s ease forwards;
+            animation: slideout 0.5s ease forwards;
         }
 
         .first-content, .second-content {
