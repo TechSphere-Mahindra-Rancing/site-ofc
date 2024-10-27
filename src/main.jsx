@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       { path:'/noticias', element: <MainNoticias/> },
       { path:'/store', element: <MainLoja/> },
       { path:'/corridas', element: <MainCorridas/>},
-      { path:'//sobre', element: <MainSobre/>},
+      { path:'/sobre', element: <MainSobre/>},
       { path:'/perfil', element: <MainPerfil/>},
       { path:'/cadastro', element: <Login/>}, // Página de cadastro
       { path:'/noticia1', element: <Noticia1/> }, 

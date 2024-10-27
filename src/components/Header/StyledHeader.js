@@ -41,7 +41,7 @@ export const StyledHeader = styled.header`
         background: transparent;
         border: none;
         outline: none;
-        color: black;
+        color: #001734;
         opacity: 0;
         font-size: 1.8rem;
     }

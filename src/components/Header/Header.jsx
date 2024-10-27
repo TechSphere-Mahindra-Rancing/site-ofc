@@ -18,11 +18,11 @@ export default function Header(){
             </div>
             <nav ref={navRef}>
                 <Link to="/">Início</Link>
-                <Link to="/">Notícias</Link>
-                <Link to="/">Corridas</Link>
-                <Link to="/">Loja</Link>
-                <Link to="/">Dashborad</Link>
-                <Link to="/">Sobre Nós</Link>
+                <Link to="/noticias">Notícias</Link>
+                <Link to="/corridas">Corridas</Link>
+                <Link to="/store">Loja</Link>
+                <Link to="/dashboard">Dashborad</Link>
+                <Link to="/sobre">Sobre Nós</Link>
                 <button className="nav-btn  nav-close-btn" onClick={showNavBar}>
                     <FaTimes />
                 </button>
