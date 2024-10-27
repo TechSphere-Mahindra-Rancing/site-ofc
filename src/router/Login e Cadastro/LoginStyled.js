@@ -102,6 +102,7 @@ export const LoginStyled = styled.main`
     .btn:hover{
         background: linear-gradient(90deg, rgba(187, 55, 55, 0.5) 0%, rgba(0, 62, 142, 0.5) 100%);
         color: rgba(255, 255, 255, 0.5);
+        transform: scale(1.03);
     }
 
     .form {

@@ -17,12 +17,18 @@ export default function Header(){
                 <h1>LOGO</h1>
             </div>
             <nav ref={navRef}>
+                <div id="logo">
+                    <h1>LOGO</h1>
+                </div>
                 <Link to="/">Início</Link>
                 <Link to="/noticias">Notícias</Link>
                 <Link to="/corridas">Corridas</Link>
                 <Link to="/store">Loja</Link>
                 <Link to="/dashboard">Dashborad</Link>
                 <Link to="/sobre">Sobre Nós</Link>
+                <Link to="/cadastro" className="icon-perfil" id="login">
+                    <FaUser />
+                </Link>
                 <button className="nav-btn  nav-close-btn" onClick={showNavBar}>
                     <FaTimes />
                 </button>

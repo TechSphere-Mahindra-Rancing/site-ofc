@@ -19,6 +19,14 @@ export const StyledHeader = styled.header`
         transition: 2s;
     }
 
+    #logo{
+        display: none;
+    }
+
+    #login{
+        display: none;
+    }
+
     nav a{
         padding: 4px;
         color: #001734;
@@ -32,6 +40,7 @@ export const StyledHeader = styled.header`
         color: #3C5370;
         border-bottom: 2px solid #3C5370;
         padding-bottom: 0;
+        transform: scale(1.03);
     }
 
     .nav-btn{
@@ -65,6 +74,7 @@ export const StyledHeader = styled.header`
     .icon-perfil:hover {
         background: linear-gradient(90deg, rgba(187, 55, 55, 0.5) 0%, rgba(0, 62, 142, 0.5) 100%);
         color: rgba(255, 255, 255, 0.5);
+        transform: scale(1.03);
     }
 
     @media (max-width: 750px) {
@@ -105,6 +115,26 @@ export const StyledHeader = styled.header`
         nav a{
             font-size: 1.5rem;
             transition: none;
+        }
+
+        #logo{
+            display: flex;
+            padding-bottom: 24px;
+        }
+
+        #login{
+            display: flex;
+            padding-top: 28px;
+            background: linear-gradient(90deg, #BB3737 0%, #003E8E 100%);
+            padding: 8px 10px 8px;
+            font-size: 20px;
+            color: #fff;
+            border-radius: 100%;
+            transition: background 0.5s ease, color 0.5s ease; /* Transições de background e cor */
+        }
+
+        .icon-perfil{
+            display: none;
         }
     }
         
