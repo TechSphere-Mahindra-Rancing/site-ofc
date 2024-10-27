@@ -1,164 +1,174 @@
 import styled from "styled-components";
 
 export const DesingMainSobre = styled.main`
-    background: linear-gradient(90deg, #BB3737 0%, #003E8E 100%);
-    color: white;
+
     overflow: auto;
 
-    #banner{
-        
+    .container {
+        padding: 2% 5%;
         display: flex;
+        flex-direction: column;
+        background: linear-gradient(90deg, #BB3737 0%, #003E8E 100%);
+    }
+
+    .section {
+        margin-bottom: 36px;
+    }
+
+    .title-box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
         justify-content: center;
+        color: #fff;
     }
 
-    .imagem-inicial{
-        height: 400px;
-        width: 1100px;
-        background: rgba(255, 255, 255, 0.1);
-        margin-top: 50px;
-        border-radius: 24px;
-    }
-
-    .primeira-section{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin: 80px 0;
-        padding: 0 150px;
-    }
-
-    .primeiro-paragrafo{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+    .subtitle-box{
         font-size: 20px;
-        
-    }
-
-    .primeira-section h1{
-        font-size: 30px;
         font-weight: 600;
+        padding: 12px 0 8px;
+        color: #fff;
     }
 
-    .primeira-section hr{
-        border: 2px solid white
-        
-}
+    .paragraf {
+        padding: 16px 0;
+        color: #fff;
+    }
 
-    .div-valores{
+    .diviser {
+        border: 2px solid #fff;
+        width: 20%;
+        align-items: center;
+        margin-top: 12px;
+    }
+
+    .value-mission {
         display: flex;
-        justify-content: center;
-        gap: 100px;
+        justify-content: space-between;
+        margin: 0 10%;
     }
 
-    .div-valores ul li{
-        margin: 10px 0;
-        list-style-type: none;
-        font-size: 20px;
+    .value-mission .title-box {
+        align-items: center;
+        padding-bottom: 24px;
     }
 
-    .lista{
-        display: flex;
+    .value-mission .diviser {
+        width: 70%;
+    }
+
+    .section-box{
+        margin-bottom: 50px;
+    }
+
+    .box {
         background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
         width: 400px;
-        height: 300px;
-        justify-content: center;
-        align-items: center;
+        min-height: 200px;
+        padding: 24px;
         border-radius: 24px;
-        margin: 20px 0 100px 0;
+        color: #fff;
+        
+        ul {
+            gap: 30px;
+        }
+
+        ul li {
+            padding: 12px 0;
+            text-align: center;
+            list-style: none;
+        }
     }
 
-    .nossa-missao h2{
+    .mensage {
         text-align: center;
-        font-size: 25px;
-        font-weight: 600;
+        color: #fff;
     }
 
-    .frase-impactante{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        margin: 0 0 50px 0;
-        padding: 0 150px;
+    .mensage .mensage-title, .mensage-subtitle {
+        padding-bottom: 24px;
     }
 
-    .frase-impactante h3{
-        font-size: 25px;
-        font-weight: 600;
+    .mensage .mensage-subtitle{
+        font-weight: 500;
     }
-
-    .frase-impactante h4{
-        text-align: center;
-        font-size: 20px;
-        font-weight: 600;
-    }
-
+    
     .equipe{
         display: flex;
         flex-direction: column;
-        gap: 20px;
         justify-content: center;
         margin-bottom: 100px;
     }
 
-    .equipe h2{
-        text-align: start;
-        margin-left: 150px;
-
-    }
-
-    .equipe hr{
-        width: 200px;
-        margin-left: 150px;
-        margin-bottom: 50px;
-    }
-
-    .primeira{
-        width: fit-content;
-        height: fit-content;
-        display: flex;
-        gap: 20px;
-        padding: 0 150px;
-        align-items: center;
+    .equipe .subtitle-box {
+        padding-bottom: 24px;
     }
 
     .btn-ver-mais {
-        text-align: end;
+        text-align: center;
+
+        button {
+            background: linear-gradient(90deg, #BB3737 0%, #003E8E 100%);
+            border: none;
+            border-radius: 24px;
+            padding: 8px 16px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            transition:0.5s ease;
+        }
     }
 
-    .segunda{
-        width: fit-content;
-        height: fit-content;
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 20px;
-        padding: 0 150px;
-        align-items: center;
-    }
-
-    .foto{
-        height: 200px;
-        min-width: 250px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 24px;
-    }
-
-    .paragrafo{
-        margin: 10px 0;
-        font-size: 14px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 24px;
-        height: fit-content;
-        padding: 20px 20px;
+    .btn-ver-mais button:hover{
+        background: linear-gradient(90deg, rgba(187, 55, 55, 0.5) 0%, rgba(0, 62, 142, 0.5) 100%);
+        color: rgba(255, 255, 255, 0.5);
+        transform: scale(1.03); 
     }
 
     .negrito{
         font-weight: 700;
     }
 
-    .paragrafo p{
-        margin: 10px 0;
+    .container-members {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .members-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 24px;
+        padding: 24px;
+        color: #fff;
+
+        img{
+            width: 200px;
+            height: auto;
+        }
+    }
+
+    .members-content .member{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600;
+
+    }
+
+    .member .nome {
+        font: 24px;
+    }
+
+    .about .paragraf{
+        padding-bottom: 20px;
     }
 
     .modal-overlay {
@@ -167,24 +177,147 @@ export const DesingMainSobre = styled.main`
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.1);
+        background: rgba(0, 0, 0, 0.2);
         display: flex;
         align-items: center;
         justify-content: center;
         z-index: 1000;
     }
 
-        .modal-content {
-        background: white;
-        padding: 20px;
+    .modal-content {
+        background: #fff;
+        box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+        padding: 24px;
         border-radius: 8px;
         max-width: 500px;
         width: 100%;
         text-align: center;
         align-items: center;
-
         color: black;
+
+        h3{
+            color: #003E8E;
+            font-size: 20px;
+        }
+
+        p {
+            color: #BB3737;
+            font-size: 18px;
+        }
     }
 
+    .modal-content ul {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        padding: 25px 0 50px;
+
+        li {
+            list-style: none;
+        }
+
+        li a{
+            text-decoration: none;
+
+        }
+    }
+
+    .modal-content button{
+        background: linear-gradient(90deg, #BB3737 0%, #003E8E 100%);
+        border: none;
+        border-radius: 24px;
+        padding: 8px 16px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        transition:0.5s ease;
+    }
+
+    .modal-content button:hover{
+        background: linear-gradient(90deg, rgba(187, 55, 55, 0.5) 0%, rgba(0, 62, 142, 0.5) 100%);
+        color: rgba(255, 255, 255, 0.5);
+        transform: scale(1.03); 
+    }
+
+    .container-redes .icon-rede{
+        font-size: 40px;
+        color: #003E8E;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+
+    .container-redes .icon-rede:hover{
+        color: rgba(0, 62, 142, 0.5);
+        transform: scale(1.03);
+    }
+
+    @media (max-width: 750px) {
+
+    .section {
+        margin-bottom: 18px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title-box{
+        align-items: center;
+    }
+
+    .paragraf {
+        font-size: 18px;
+    }
+
+    .diviser {
+        width: 50%;
+        align-items: center;
+    }
+
+    .value-mission {
+        flex-direction: column;
+    }
+
+    .mensage .mensage-subtitle {
+        font-size: 24px;
+    }
+    
+    .members-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 150px;
+            height: auto;
+        }
+    }
+
+    .membro-equipe {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-ver-mais button {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .modal-content {
+        max-width: 500px;
+    }
+
+    .modal-content ul {
+        gap: 14px;
+        }
+    }
+
+    .modal-content button{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .container-redes .icon-rede{
+        font-size: 45px;
+    }
 
 `
