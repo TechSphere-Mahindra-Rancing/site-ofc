@@ -10,7 +10,6 @@ export const InicioStyle = styled.main`
    color: white;
 
    .section {
-    min-height: 100vh;
     margin: 0 5%;
    }
 
@@ -222,6 +221,138 @@ export const InicioStyle = styled.main`
             font-size: 20px;
             color: #1E1E1E;
             font-weight: 600;
+        }
+    }
+
+    @media (max-width: 750px) {
+    .section {
+        margin: 0 2%;
+    }
+
+    .banner-container{
+        flex-direction: column;
+        padding: 10% 5% 5%;
+    }
+
+    .banner-text{
+        align-items: center;
+        text-align: center;
+        
+        h1{
+            font-size: 20px;
+        }
+
+        h3{
+            font-size: 16px;
+        }
+    }
+
+    .banner-image img {
+        width: 300px;
+        padding: 24px 0;
+    }
+
+    .banner-diviser{
+        width: 65%;
+    }
+
+    .btn-default{
+        padding: 4px 8px;
+        margin: 24px 0;
+        border-radius: 16px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* Sections Conteudo */
+    .content-section {
+        padding: 5%;
+        gap: 14px;
+
+        h1{
+            font-size: 22px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3, h4{
+            font-size: 20px;
+            padding-bottom: 18px;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: center;
+            padding-bottom: 18px;
+        }
+
+    }
+
+    .bloco-background{
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding-bottom: 24px;
+    }
+
+    .bloco-content {
+        width: 90%;
+        justify-content: center;
+        margin: 0 5%;
+        padding: 24px;
+
+        h3{
+            font-size: 20px;
+        }
+
+    }
+
+    .bloco-content-fe {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 24px;
+
+        h3{
+            font-size: 20px;
+        }
+
+    }
+
+    .animacao{
+        display: none;
+    }
+
+    .container-bloco {
+        flex-direction: column;
+    }
+
+    .avaliacoes-container{
+        padding: 0 0 24px;
+        }
+
+        .avaliacoes-container .avaliacoes-title{
+            font-size: 20px;
+        }
+
+        .depoimento-content {
+            flex-direction: column;
+            padding: 24px;
+        }
+
+        .depoimento-content p{
+            flex-direction: column;
+            font-size: 16px;
+            text-align: center;
+
+            span {
+                font-size: 16px;
+            }
+
+            .nome{
+                font-size: 16px;
+            }
         }
     }
 `
