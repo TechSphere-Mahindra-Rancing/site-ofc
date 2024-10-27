@@ -276,6 +276,10 @@ export const DesingMainSobre = styled.main`
         flex-direction: column;
     }
 
+    .box {
+        width: 300px;
+    }
+
     .mensage .mensage-subtitle {
         font-size: 24px;
     }
@@ -292,6 +296,14 @@ export const DesingMainSobre = styled.main`
         }
     }
 
+    .equipe {
+        margin-bottom: 70px;
+    }
+
+    .equipe .diviser{
+        width: 200px;
+    }
+
     .membro-equipe {
         display: flex;
         justify-content: center;
@@ -303,7 +315,7 @@ export const DesingMainSobre = styled.main`
     }
 
     .modal-content {
-        max-width: 500px;
+        max-width: 300px;
     }
 
     .modal-content ul {
