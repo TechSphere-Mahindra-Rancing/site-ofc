@@ -26,7 +26,6 @@ export default function Header(){
                 </div>
                 <Link to="/" onClick={hideNavBar}>Início</Link>
                 <Link to="/noticias" onClick={hideNavBar}>Notícias</Link>
-                <Link to="/corridas" onClick={hideNavBar}>Corridas</Link>
                 <Link to="/store" onClick={hideNavBar}>Loja</Link>
                 <Link to="/dashboard" onClick={hideNavBar}>Dashborad</Link>
                 <Link to="/sobre" onClick={hideNavBar}>Sobre Nós</Link>
