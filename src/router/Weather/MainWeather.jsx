@@ -1,88 +1,82 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import Sensor from '../../components/Sensor/Sensor';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
+const IP_ADDRESS = "4.201.196.181";
+const PORT_STH = 8666;
 
-const MainWeather = () => {
-  // Estados para armazenar os dados
-  const [sensorData, setSensorData] = useState({
-    timestamps: [],
-    luminosityValues: [],
-    humidityValues: [],
-    temperatureValues: [],
-  });
-
-  const IP_ADDRESS = '4.201.196.181';
-  const PORT_STH = 8666;
-  const lastN = 10; // Número de leituras recentes
-
-  // Função para buscar dados da API
-  const getSensorData = async (attribute) => {
-    const url = `http://${IP_ADDRESS}:${PORT_STH}/STH/v1/contextEntities/type/Sensor/id/urn:ngsi-ld:Sensor:001/attributes/${attribute}?lastN=${lastN}`;
-    const headers = {
+const fetchSensorData = async (attribute) => {
+  const corsAnywhere = "https://cors-anywhere.herokuapp.com/";
+  const response = await fetch(`${corsAnywhere}http://${IP_ADDRESS}:${PORT_STH}/STH/v1/contextEntities/type/Sensor/id/urn:ngsi-ld:Sensor:001/attributes/${attribute}?lastN=10`, {
+    method: 'GET',
+    headers: {
       'fiware-service': 'smart',
-      'fiware-servicepath': '/'
-    };
-    try {
-      const response = await axios.get(url, { headers });
-      if (response.status === 200) {
-        const values = response.data.contextResponses[0].contextElement.attributes[0].values;
-        return values;
-      } else {
-        console.error(`Erro ao acessar ${url}: ${response.status}`);
-        return [];
-      }
-    } catch (error) {
-      console.error(`Erro: ${error}`);
-      return [];
+      'fiware-servicepath': '/',
+      // Cabeçalhos adicionais CORS
+      'Access-Control-Allow-Origin': '*', // Permitir qualquer origem (para desenvolvimento)
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Origin, Content-Type, Accept'
     }
-  };
+  });
+  const data = await response.json();
+  try {
+    const values = data.contextResponses[0].contextElement.attributes[0].values;
+    return values.map(item => ({
+      timestamp: new Date(item.recvTime).toLocaleString('pt-BR'),
+      value: parseFloat(item.attrValue)
+    }));
+  } catch (error) {
+    console.error("Error parsing sensor data", error);
+    return [];
+  }
+};
 
-  // Função para atualizar os dados
-  const updateSensorData = async () => {
-    const luminosityData = await getSensorData('luminosity');
-    const humidityData = await getSensorData('humidity');
-    const temperatureData = await getSensorData('temperature');
-    const rainData = await getSensorData('rain');
+const Dashboard = () => {
+  const [luminosityData, setLuminosityData] = useState([]);
+  const [humidityData, setHumidityData] = useState([]);
+  const [temperatureData, setTemperatureData] = useState([]);
 
-    // Extraindo os valores e timestamps
-    const timestamps = luminosityData.map(entry => new Date(entry.recvTime).toLocaleString());
-    const luminosityValues = luminosityData.map(entry => parseFloat(entry.attrValue));
-    const humidityValues = humidityData.map(entry => parseFloat(entry.attrValue));
-    const temperatureValues = temperatureData.map(entry => parseFloat(entry.attrValue));
-    const rainValues = rainData.map(entry => parseFloat(entry.attrValue));
-
-    setSensorData({
-      timestamps,
-      luminosityValues,
-      humidityValues,
-      temperatureValues,
-      rainValues
-    });
-  };
-
-  // useEffect para chamar a função de atualização a cada 10 segundos
   useEffect(() => {
-    updateSensorData();
-    const interval = setInterval(updateSensorData, 10000); // Atualiza a cada 10 segundos
+    const fetchData = async () => {
+      const [luminosity, humidity, temperature] = await Promise.all([
+        fetchSensorData('luminosity'),
+        fetchSensorData('humidity'),
+        fetchSensorData('temperature')
+      ]);
+
+      setLuminosityData(luminosity);
+      setHumidityData(humidity);
+      setTemperatureData(temperature);
+    };
+
+    fetchData();
+    const interval = setInterval(fetchData, 10000);  // Atualiza a cada 10 segundos
     return () => clearInterval(interval);
   }, []);
 
-  // Dados para o gráfico
-  const data = sensorData.timestamps.map((timestamp, index) => ({
-    timestamp,
-    luminosity: sensorData.luminosityValues[index],
-    humidity: sensorData.humidityValues[index],
-    temperature: sensorData.temperatureValues[index],
-    rain: sensorData.rainValues[index]
-  }));
+  const renderChart = (data, label, color) => (
+    <ResponsiveContainer width="80%" height={300}>
+      <LineChart data={data}>
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="timestamp" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Line type="monotone" dataKey="value" stroke={color} name={label} />
+      </LineChart>
+    </ResponsiveContainer>
+  );
 
   return (
-    <>
-        <Sensor data={data}/>
-    </>
+    <div>
+      <h1>Weather Sensor Dashboard</h1>
+      <h2>Luminosity (Lux)</h2>
+      {renderChart(luminosityData, 'Luminosity', 'orange')}
+      <h2>Humidity (%)</h2>
+      {renderChart(humidityData, 'Humidity', 'blue')}
+      <h2>Temperature (°C)</h2>
+      {renderChart(temperatureData, 'Temperature', 'red')}
+    </div>
   );
 };
 
-export default MainWeather;
+export default Dashboard;
