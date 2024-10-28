@@ -1,14 +1,14 @@
-import Sect1Corridas from "../Corridas/Sect1Corridas"
+import MenuDash from "../../components/Menu Dashboard/MenuDash"
+import { MainStyled } from "./Style/MainStyled"
 
 export default function MainDashboard() {
 
     return (
-        <>
-            <div className="quadro-de-corridas">
-                <Sect1Corridas/>
+        <MainStyled>
+            <div className="menu">
+                <MenuDash/>
             </div>
-
             
-        </>
+        </MainStyled>
     )
 }
