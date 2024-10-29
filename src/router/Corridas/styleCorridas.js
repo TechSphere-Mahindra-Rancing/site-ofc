@@ -2,7 +2,18 @@ import styled from "styled-components";
 
 export const DesignCorridasMain = styled.main`
 
-    background-color: #f0f0f0;
+    background: linear-gradient(90deg, #BB3737 0%, #003E8E 100%);
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        margin-top: 2%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 
     #titulo{
         font-size: 32px;
@@ -36,8 +47,6 @@ export const DesignCorridasMain = styled.main`
 `
 
 export const DesingSect1Corrida = styled.section`
-
-
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);

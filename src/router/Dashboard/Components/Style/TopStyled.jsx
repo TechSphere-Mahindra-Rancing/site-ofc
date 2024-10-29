@@ -9,7 +9,6 @@ export const TopStyled = styled.header`
 
     .title{
         font-weight: 600;
-        text-align: center;
     }
 
     .uses {
@@ -89,7 +88,12 @@ export const TopStyled = styled.header`
 
         .title {
             font-size: 16px;
-        }   
+        }
+
+        .perfil {
+            display: flex;
+            align-items: center;
+        }
 
         .profile img{
             width: 60px;

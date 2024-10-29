@@ -7,7 +7,7 @@ export const MainStyled = styled.main`
     background: linear-gradient(90deg, #BB3737 0%, #003E8E 100%);
     overflow: auto;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 
     .menu {
@@ -15,6 +15,7 @@ export const MainStyled = styled.main`
     }
 
     .container {
+        margin-top: 2%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -57,6 +58,10 @@ export const MainStyled = styled.main`
             border-top-left-radius: 50px;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
+        }
+
+        .menu {
+            margin-left: 0;
         }
 
         .weather {
