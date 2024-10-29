@@ -12,7 +12,7 @@ const MenuDash =()=>{
 
     return (
 
-        <MenuStyled className="container">
+        <MenuStyled>
             <div className="logo">
                 <h1>LOGO</h1>
             </div>

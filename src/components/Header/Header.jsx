@@ -26,7 +26,7 @@ export default function Header(){
                 </div>
                 <Link to="/" onClick={hideNavBar}>Início</Link>
                 <Link to="/noticias" onClick={hideNavBar}>Notícias</Link>
-                <Link to="/dashboard" onClick={hideNavBar}>Dashborad</Link>
+                <Link to="/dashboard" onClick={hideNavBar}>Dashboard</Link>
                 <Link to="/sobre" onClick={hideNavBar}>Sobre Nós</Link>
                 <Link to="/cadastro" className="icon-perfil" id="login" onClick={hideNavBar}>
                     <FaUser />

@@ -4,22 +4,18 @@ export const MenuStyled = styled.nav`
 
     width: 12%;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px;
+    padding: 50px 0;
     gap: 24px;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    border-top-right-radius: 24px;
-    border-bottom-right-radius: 24px;
     
     .nav-container{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: end;
         justify-content: center;
-        gap: 28px;
+        gap: 20px;
 
         li {
             list-style: none;
@@ -35,6 +31,10 @@ export const MenuStyled = styled.nav`
         }
     }
 
+    .logo{
+        padding-bottom: 42px;
+    }
+
     .nav-container li a:hover{
         color: rgba(255, 255, 255, 0.5);
         padding-bottom: 0;
@@ -44,9 +44,9 @@ export const MenuStyled = styled.nav`
     .nav-container .icon{
         font-size: 20px;
     }
-
+ 
     .btn-out {
-        padding-top: 50px;
+        padding-top: 10px;
 
         button {
             background: none;
