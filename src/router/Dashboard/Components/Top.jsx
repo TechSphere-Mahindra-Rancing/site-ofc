@@ -59,18 +59,22 @@ const Top = () => {
           <input type="text" placeholder="pesquisar"/>
         </div>
 
-        <div className="notification">
-          <IoNotifications className="icon"/>
+        <div className="perfil">
+          <div className="notification">
+            <IoNotifications className="icon"/>
+          </div>
+
+          <div className="cash">
+            <div><RiCopperCoinFill className="icon"/></div>
+            <div>1250</div>
+          </div>
+
+          <div className="profile">
+            <img src="avatar2.png" alt="" />
+          </div>
         </div>
 
-        <div className="cash">
-          <div><RiCopperCoinFill className="icon"/></div>
-          <div>1250</div>
-        </div>
-
-        <div className="profile">
-          <img src="avatar2.png" alt="" />
-        </div>
+        
       </div>
     </TopStyled>
   );

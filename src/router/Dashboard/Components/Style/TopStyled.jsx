@@ -9,12 +9,18 @@ export const TopStyled = styled.header`
 
     .title{
         font-weight: 600;
+        text-align: center;
     }
 
     .uses {
         display: flex;
         align-items: center;
         gap: 30px;
+    }
+
+    .perfil {
+        display: flex;
+        align-items: center;
     }
 
     .icon {
@@ -69,5 +75,29 @@ export const TopStyled = styled.header`
     .profile img{
         width: 70px;
         cursor: pointer;
+    }
+
+    @media (max-width: 750px) {
+
+        flex-direction: column;
+        gap: 10px;
+
+        .uses {
+            flex-direction: column-reverse;
+            gap: 12px;
+        }
+
+        .title {
+            font-size: 16px;
+        }   
+
+        .profile img{
+            width: 60px;
+        }
+
+        .search .icon {
+            position: relative;
+            left: 12%;
+        }
     }
 `

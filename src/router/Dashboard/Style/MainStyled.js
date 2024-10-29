@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MainStyled = styled.main`
 
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(90deg, #BB3737 0%, #003E8E 100%);
     overflow: auto;
     display: flex;
@@ -15,6 +15,9 @@ export const MainStyled = styled.main`
     }
 
     .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 80vw;
         min-height: 90vh;
         background-color: #fff;
@@ -24,8 +27,7 @@ export const MainStyled = styled.main`
     /* Weather CSS */
 
     .weather {
-        min-height: 90vh;
-        margin-top: 9%;
+        height: fit-content;
         border-top-right-radius: 24px;
         border-top-left-radius: 24px;
     }
@@ -43,6 +45,22 @@ export const MainStyled = styled.main`
 
     .chart-section h1, .chart-section h2 {
         margin: 10px 0; 
+    }
+
+    @media (max-width: 750px) {
+        
+        flex-direction: column;
+
+        .container {
+            width: 100vw;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .weather {
+        }
     }
 
 
