@@ -1,82 +1,80 @@
-import { Link } from "react-router-dom"
-import { MenuStyled } from "./MenuStyled"
+import { NavLink } from "react-router-dom";
+import { MenuStyled } from "./MenuStyled";
 
-// ICONES
+// ÍCONES
 import { FaCalendarAlt, FaStore } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { TbLayoutDashboardFilled } from "react-icons/tb";
 import { TiWeatherPartlySunny } from "react-icons/ti";
-import { IoCarSport, IoGameController } from "react-icons/io5";
+import { IoCarSport, IoGameController, IoLogOut } from "react-icons/io5";
 
-const MenuDash =()=>{
+const MenuDash = () => {
+  return (
+    <MenuStyled>
+      <div className="logo">
+        <h1>LOGO</h1>
+      </div>
+      <nav className="nav-container">
+        <ul className="nav-container">
+          <li>
+            <NavLink to="/dashboard" className={({ isActive }) => (isActive ? 'active-link' : '')}>
+              <span className="icon"><TbLayoutDashboardFilled /></span>
+              <span>Dashboard</span>
+            </NavLink>
+          </li>
 
-    return (
+          <li>
+            <NavLink to="/calendario" className={({ isActive }) => (isActive ? 'active-link' : '')}>
+              <span className="icon"><FaCalendarAlt /></span>
+              <span>Calendário</span>
+            </NavLink>
+          </li>
 
-        <MenuStyled>
-            <div className="logo">
-                <h1>LOGO</h1>
-            </div>
-            <nav className="nav-container">
-                <ul className="nav-container">
-                    <li>
-                        <Link to="/dashboard">
-                        <span className="icon"><TbLayoutDashboardFilled /></span>
-                        <span>Dashboard</span>
-                        </Link>
-                    </li>
-                    
-                    <li>
-                        <Link to="/dashboard">
-                        <span className="icon"><FaCalendarAlt /></span>
-                        <span>Calendário</span>
-                        </Link>
-                    </li>
+          <li>
+            <NavLink to="/corridas" className={({ isActive }) => (isActive ? 'active-link' : '')}>
+              <span className="icon"><IoCarSport /></span>
+              <span>Corridas</span>
+            </NavLink>
+          </li>
 
-                    <li>
-                        <Link to="/dashboard">
-                        <span className="icon"><IoCarSport /></span>
-                        <span>Corridas</span>
-                        </Link>
-                    </li>
+          <li>
+            <NavLink to="/egoat" className={({ isActive }) => (isActive ? 'active-link' : '')}>
+              <span className="icon"><IoGameController /></span>
+              <span>E-GOAT</span>
+            </NavLink>
+          </li>
 
-                    <li>
-                        <Link to="/dashboard">
-                        <span className="icon"><IoGameController /></span>
-                        <span>E-GOAT</span>
-                        </Link>
-                    </li>
+          <li>
+            <NavLink to="/etalk" className={({ isActive }) => (isActive ? 'active-link' : '')}>
+              <span className="icon"><FaPeopleGroup /></span>
+              <span>E-Talk</span>
+            </NavLink>
+          </li>
 
-                    <li>
-                        <Link to="/dashboard">
-                        <span className="icon"><FaPeopleGroup /></span>
-                        <span>E-Talk</span>
-                        </Link>
-                    </li>
+          <li>
+            <NavLink to="/weather" className={({ isActive }) => (isActive ? 'active-link' : '')}>
+              <span className="icon"><TiWeatherPartlySunny /></span>
+              <span>Weather</span>
+            </NavLink>
+          </li>
 
-                    <li>
-                        <Link to="/dashboard">
-                        <span className="icon"><TiWeatherPartlySunny /></span>
-                        <span>Weather</span>
-                        </Link>
+          <li>
+            <NavLink to="/loja" className={({ isActive }) => (isActive ? 'active-link' : '')}>
+              <span className="icon"><FaStore /></span>
+              <span>Loja</span>
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+      <div className="btn-out">
+        <button>
+          <NavLink to="/cadastro">
+            <IoLogOut className="icon-logout" />
+          </NavLink>
+        </button>
+      </div>
+    </MenuStyled>
+  );
+};
 
-                    </li>
-
-                    <li>
-                        <Link to="/dashboard">
-                        <span className="icon"><FaStore /></span>
-                        <span>Loja</span>
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
-            <div className="btn-out">
-                <button>
-                    icon 
-                </button>
-            </div>
-
-        </MenuStyled>
-    )
-}
-
-export default MenuDash
+export default MenuDash;

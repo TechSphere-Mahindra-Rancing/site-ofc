@@ -23,7 +23,7 @@ export const MenuStyled = styled.nav`
             a {
                 display: flex;
                 gap: 10px;
-                color: #fff;
+                color: rgba(255, 255, 255, 0.5);
                 text-decoration: none;
                 transition: color 0.5s ease;
             }
@@ -36,13 +36,24 @@ export const MenuStyled = styled.nav`
     }
 
     .nav-container li a:hover{
-        color: rgba(255, 255, 255, 0.5);
+        color: #fff;
         padding-bottom: 0;
         transform: scale(1.03);
     }
 
     .nav-container .icon{
         font-size: 20px;
+    }
+
+    .icon-logout {
+        font-size: 40px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .icon-logout:hover{
+        color: #fff;
+        padding-bottom: 0;
+        transform: scale(1.03);
     }
  
     .btn-out {
@@ -54,4 +65,21 @@ export const MenuStyled = styled.nav`
             font-size: 24px;
         }
     }
+
+    .nav-container .active-link {   
+        color: #fff;
+    }
+
+        /* Opcional: Para manter o estilo padrão dos links */
+    .nav-container a {
+        color: inherit;   /* Cor da fonte padrão */
+        text-decoration: none; /* Remove o sublinhado padrão dos links */
+    }
+
+        /* Caso você queira adicionar transições */
+    .nav-container .active-link,
+    .nav-container a {
+        transition: background 0.3s ease, color 0.3s ease; /* Efeito de transição suave */
+    }
+
 `

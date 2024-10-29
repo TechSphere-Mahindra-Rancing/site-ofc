@@ -24,8 +24,8 @@ export const TopStyled = styled.header`
     }
     
     .search .icon {
-        position: absolute;
-        margin: 0 16px;
+        position: relative;
+        left: 12.7%;
     }
 
     .search input{

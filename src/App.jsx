@@ -12,12 +12,12 @@ import Login from "./router/Login e Cadastro/Login"
 
 // ROTAS DASHBOARD
 import Dashboard from "./router/Dashboard/MainDashboard"
-// import Calendario from "./"
 import Corridas from "./router/Corridas/MainCorridas"
-// import EGOAT from "./"
-// import ETalk from "./"
 import Weather from "./router/Weather/MainWeather"
 import Loja from "./router/Store/MainLoja"
+import Egoat from './router/E-GOAT/Egoat';
+import Etalk from './router/E-Talk/Etalk';
+import MainCalendario from './router/Calendario/MainCalendario';
 
 function App() {
 
@@ -36,10 +36,10 @@ function App() {
         {/* Rota do Dashboard, sem Header e Footer */}
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
-          {/* <Route path="/calendario" element={<Calendario />} /> */}
+          <Route path="/calendario" element={<MainCalendario />} />
           <Route path="/corridas" element={<Corridas />} />
-          {/* <Route path="/egoat" element={<EGOAT />} /> */}
-          {/* <Route path="/etalk" element={<ETalk />} /> */}
+          <Route path="/egoat" element={<Egoat />} />
+          <Route path="/etalk" element={<Etalk />} />
           <Route path="/weather" element={<Weather />} />
           <Route path="/loja" element={<Loja />} />
         </Route>
