@@ -30,7 +30,11 @@ export const MenuStyled = styled.nav`
     }
 
     .logo{
-        padding-bottom: 24px;
+        padding-bottom: 0;
+
+        img {
+            width: 80px;
+        }
     }
 
     .nav-container .logo {
@@ -103,7 +107,8 @@ export const MenuStyled = styled.nav`
         height: 10vh;
         flex-direction: row;
         align-items: center;
-        padding: 0;
+        justify-content: center;
+        padding: 0 24px;
 
         .nav-btn{
             display: flex;
@@ -137,16 +142,17 @@ export const MenuStyled = styled.nav`
 
             a{
                 color: rgba(187, 55, 55, 0.5);
+                align-items: center;
             }
 
             span {
                 font-size: 24px;
             }
 
-            .logo {
-                padding-bottom: 24px;
-            }
-
+        }
+        
+        .icon {
+            margin-top: 5%;
         }
 
         .nav-container a:hover{
@@ -154,7 +160,14 @@ export const MenuStyled = styled.nav`
         }
 
         .logo{
+            display: flex;
+            align-items: center;
+            padding: 20px;
             padding-bottom: 0;
+
+            img {
+                width: 100px;
+            }
         }
 
         .nav-container .logo {
@@ -193,12 +206,6 @@ export const MenuStyled = styled.nav`
         .nav-container a{
             color: rgba(187, 55, 55, 0.5);   /* Cor da fonte padrão */
             text-decoration: none; /* Remove o sublinhado padrão dos links */
-        }
-
-        /* Caso você queira adicionar transições */
-        .nav-container .active-link,
-        .nav-container a {
-            transition: background 0.3s ease, color 0.3s ease; /* Efeito de transição suave */
         }
     }
 

@@ -88,6 +88,7 @@ export const TopStyled = styled.header`
 
         .title {
             font-size: 16px;
+            text-align: center;
         }
 
         .perfil {

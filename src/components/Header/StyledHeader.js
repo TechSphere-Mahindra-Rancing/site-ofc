@@ -19,6 +19,11 @@ export const StyledHeader = styled.header`
         transition: 2s;
     }
 
+    .logo img{
+        margin: 14px auto 10px;
+        width: 100px;
+    }
+
     #logo{
         display: none;
     }
@@ -120,6 +125,10 @@ export const StyledHeader = styled.header`
         #logo{
             display: flex;
             padding-bottom: 24px;
+
+            img {
+                width: 100px;
+            }
         }
 
         #login{

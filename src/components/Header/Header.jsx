@@ -17,12 +17,12 @@ export default function Header(){
 
     return(
         <StyledHeader>
-            <div>
-                <h1>LOGO</h1>
+            <div className="logo">
+                <img src="Logo-Formula-hub.png" alt="" />
             </div>
             <nav ref={navRef}>
                 <div id="logo">
-                    <h1>LOGO</h1>
+                    <img src="Logo-Formula-hub.png" alt="" />
                 </div>
                 <Link to="/" onClick={hideNavBar}>Início</Link>
                 <Link to="/noticias" onClick={hideNavBar}>Notícias</Link>

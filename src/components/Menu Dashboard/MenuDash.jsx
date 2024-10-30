@@ -26,12 +26,12 @@ const MenuDash = () => {
   return (
     <MenuStyled>
       <div className="logo">
-        <h1>LOGO</h1>
+        <img src="logo-formula-hub-branca.png" alt="logo" />
       </div>
 
       <nav className="nav-container" ref={navRef}>
           <div className="logo">
-            <h1>LOGO</h1>
+            <img src="Logo-Formula-hub.png" alt="logo" />
           </div>
           <NavLink to="/dashboard" className={({ isActive }) => (isActive ? 'active-link' : '')} onClick={hideNavBar}>
             <span className="icon"><TbLayoutDashboardFilled /></span>
