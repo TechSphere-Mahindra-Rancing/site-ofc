@@ -1,22 +1,18 @@
 import { MainStyled } from "../Dashboard/Style/MainStyled"
 import MenuDash from "../../components/Menu Dashboard/MenuDash"
 import Top from "../Dashboard/Components/Top"
-import { EgoatHistorico } from "./EgoatHistorico"
+import Sect1Egoat from "./egoatHome" // Mantendo esta linha
 
-const Egoat =()=>{
-
+const Egoat = () => {
     return (
-
         <MainStyled>
             <section className="menu">
-                <MenuDash/>
+                <MenuDash />
             </section>
             <section className="container">
                 <Top />
-                
-
+                <Sect1Egoat /> {/* Este componente está sendo usado */}
             </section>
-
         </MainStyled>
     )
 }
