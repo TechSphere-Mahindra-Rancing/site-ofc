@@ -105,12 +105,13 @@ export const MenuStyled = styled.nav`
         
         width: 100%;
         height: 10vh;
+        display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 0 24px;
+        gap: 60%;
+        padding: 0 0;
 
         .nav-btn{
+    
             display: flex;
             opacity: 1;
             background: none;
