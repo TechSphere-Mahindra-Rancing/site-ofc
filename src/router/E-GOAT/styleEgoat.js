@@ -123,3 +123,30 @@ export const DesignEgoatMain = styled.main`
         }
     }
 `;
+
+export const EgoatHistorico = main.styled`
+
+    .historico{
+        display: flex;
+
+    }
+
+    .titulo-historico,
+    .titulo-data {
+        color: #BB3737;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .texto{
+        background: #003E8E;
+
+    }
+
+    .hora{
+        font-size: 25px;
+        background: #003E8EB2;
+
+    }
+
+`
