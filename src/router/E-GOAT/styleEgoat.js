@@ -124,29 +124,54 @@ export const DesignEgoatMain = styled.main`
     }
 `;
 
-export const EgoatHistorico = main.styled`
+export const EgoatHistorico = styled.main`
 
-    .historico{
+    .titulo-historico{
+        font-size: 24px;
+        color: #BB3737;
+    }
+    .container-historico {
         display: flex;
-
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .titulo-historico,
+    .historico-bloco {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid #003E8E;
+        border-radius: 8px;
+        background-color: #f0f0f0;
+    }
+
     .titulo-data {
         color: #BB3737;
-        font-size: 1.5em;
-        margin-bottom: 10px;
+        font-size: 1.2em;
     }
 
-    .texto{
+    .texto-hora-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .texto {
         background: #003E8E;
-
+        padding: 5px 10px;
+        color: white;
+        border-radius: 4px;
     }
 
-    .hora{
-        font-size: 25px;
+    .hora {
+        font-size: 1em;
         background: #003E8EB2;
-
+        padding: 5px 10px;
+        color: white;
+        border-radius: 4px;
     }
+`;
 
-`
+
