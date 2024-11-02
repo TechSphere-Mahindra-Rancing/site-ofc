@@ -140,6 +140,7 @@ export const EgoatHistorico = styled.main`
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 1026px;
         gap: 10px;
         padding: 10px;
         border: 1px solid #003E8E;
@@ -174,4 +175,61 @@ export const EgoatHistorico = styled.main`
     }
 `;
 
+export const EgoatRanking = styled.main`
+    section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .ranking-title {
+        color: red;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .container-ranking {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .ranking-item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 1023px;
+        height: 61px;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 18px;
+        background-color: #f5f5f5; /* Cor padrão */
+    }
+
+    /* Estilos específicos para posições de destaque */
+    .first-place {
+        background: #FCC41733;
+    }
+
+    .second-place {
+        background: #A6A6A633;
+    }
+
+    .third-place {
+        background: #D2511633;
+    }
+
+    /* Estilos para cada elemento */
+    .position {
+        color: red;
+        font-weight: bold;
+    }
+
+    .username {
+        color: blue;
+    }
+
+    .points {
+        color: red;
+    }
+`;
 
